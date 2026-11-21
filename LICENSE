@@ -1,0 +1,37 @@
+LICENSE — PLACEHOLDER. THIS IS NOT A LICENCE YET.
+
+This file is a stand-in so the repository has the right shape before it goes
+public. Replace it with a real licence before you make the repository public;
+until then, default copyright applies and nobody may redistribute this work.
+
+The material splits into three kinds, and the usual split is:
+
+  1. Prose and research records — the paper (`paper/paper-fse-v10.tex`,
+     `paper/paper-AVCP-v10.pdf`, `paper/paper-fse-v10-zh.md`), the run ledgers
+     and experiment readings (`supplement/evidence/`), the reviews and change
+     logs (`supplement/reviews/`, `supplement/changes/`) and the companion
+     documents (`supplement/companion-docs/`).
+     Suggested: Creative Commons Attribution 4.0 International (CC BY 4.0),
+     https://creativecommons.org/licenses/by/4.0/
+
+  2. Scripts — currently only `supplement/env/tools-hash-scan.ps1`, plus any
+     code you add later.
+     Suggested: MIT, https://opensource.org/license/mit
+
+  3. Model weights and raw tensors — NOT in this repository (see README
+     "未上传的内容"). If you publish them later they need their own terms,
+     constrained by the base model's licence (Qwen3.8-27B, revision
+     1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0).
+
+If you pick a different combination, keep the split explicit — a single
+blanket licence over prose and code is usually either too strong for the data
+or too weak for the code.
+
+To replace this file:
+
+  - CC BY 4.0: copy the legal text from
+    https://creativecommons.org/licenses/by/4.0/legalcode.txt
+  - MIT: use the standard MIT text with your copyright line, e.g.
+    "Copyright (c) 2026 Mingjie Zeng, Xin Zhou, He Zhang"
+
+Then delete every line above this one.

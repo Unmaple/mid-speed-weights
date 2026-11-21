@@ -1,0 +1,63 @@
+# 大目录：本研究机的工作树，不属于本仓库
+.local-8b/
+experiments/
+tools/
+.research/
+paper-archive/
+scratch/
+probe6000/
+personas/
+hb-witness/
+torchinductor_unmaple/
+tmp/
+tmp1/
+tmp-v4-preprint-review-20261026/
+tmp-v5-preprint-review-20261026/
+tmp-v7-preprint-review-20261026/
+pip-*/
+.dsh-diag/
+
+# 张量与权重
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.gguf
+*.npz
+*.npy
+*.gz
+*.tar
+*.7z
+
+# LaTeX 中间文件（.bbl 也不入仓：由 references.bib 重建）
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.bcf
+*.run.xml
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# 本机临时产物（保留论文与辅助材料，只挡这些）
+url_zoom.png
+notes-1021-rotated.jpg
+b1.json
+b2.json
+b3.json
+b4.json
+_e23_cap.json
+m99_dream.py

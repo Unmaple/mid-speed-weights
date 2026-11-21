@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>核心文档合订本 · 2026-10-27</title>
+<style>
+:root{--fg:#1a1a1a;--muted:#666;--line:#e3e3e3;--bg2:#fafafa;--acc:#0b5cad}
+*{box-sizing:border-box}
+body{font:16px/1.78 -apple-system,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif;color:var(--fg);
+ max-width:1000px;margin:0 auto;padding:36px 28px 80px;background:#fff}
+h1{font-size:26px;line-height:1.35;margin:0 0 6px}
+h2{font-size:21px;margin:34px 0 10px}
+h2.doc{border-top:3px solid var(--fg);padding-top:26px;margin-top:64px;font-size:24px}
+h3{font-size:17px;margin:24px 0 8px}
+h4{font-size:15px;margin:18px 0 6px;color:#333}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:24px}
+li{margin:5px 0}
+code{background:#f1f3f5;padding:1px 5px;border-radius:4px;font-size:13.5px;
+ font-family:"Cascadia Mono",Consolas,ui-monospace,monospace}
+pre{background:#f6f8fa;border:1px solid var(--line);padding:12px 14px;border-radius:8px;overflow:auto;font-size:13.5px}
+pre code{background:none;padding:0}
+blockquote{border-left:4px solid var(--line);margin:14px 0;padding:6px 14px;background:var(--bg2);color:#333}
+hr{border:0;border-top:1px solid #eee;margin:26px 0}
+.tw{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid #dfe3e8;padding:7px 9px;vertical-align:top;text-align:left}
+th{background:#f4f6f8;font-weight:600}
+tbody tr:nth-child(even){background:#fcfcfd}
+.meta{color:var(--muted);font-size:13px}
+.note{color:var(--muted);font-size:13px;margin:-4px 0 14px}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:14px 22px;margin:22px 0 8px}
+.toc h2{margin:6px 0 8px;font-size:16px;border:0;padding:0}
+.toc ol{margin:0;padding-left:20px}
+.toc .role{color:var(--muted);font-size:12.5px;margin-left:8px}
+.callout{background:#fff8e6;border:1px solid #f0d9a8;border-radius:8px;padding:10px 14px}
+a{color:var(--acc)}
+@media print{body{max-width:none;padding:0}h2.doc{page-break-before:auto}.toc{page-break-after:always}}
+</style></head><body>
+<h1>核心文档合订本（六份，已并入 2026-10-27 夜的结果）</h1>
+<p class="meta">生成于 2026-10-27 23:24　·　来源均为项目根目录下的 Markdown 原文，此处按顺序平铺。证据层（<code>results/</code>、单篇 E 规格）不在合订本内。</p>
+<nav class="toc"><h2>目录</h2><ol><li><a href="#changes">本轮变更</a></li><li><a href="#doc1">睡眠重放方向 —— 记要 v1</a><span class="role">母文档 · 方向记要</span></li><li><a href="#doc2">睡眠重放方向 —— 实验协议 v1</a><span class="role">协议 · 实验 v1</span></li><li><a href="#doc3">仿生对照表 —— 当前机制的生物学映射 v1</a><span class="role">活表 · 仿生对照</span></li><li><a href="#doc4">进攻性主张清单（v1）—— 每条标明是否成立</a><span class="role">主张 · A/B/C/D</span></li><li><a href="#doc5">文风（style）量化方法提案 v1</a><span class="role">尺子 · 文风量化</span></li><li><a href="#doc6">选题：how LLM dreams —— 压缩边界上的巩固程序 v1</a><span class="role">选题 · 为什么是这个题</span></li></ol></nav>
+
+<h2 id="changes">本轮变更（2026-10-27 夜）</h2>
+<p>这一晚只动了三处，全部是"加一节 + 改一个状态标签"，没有改写既有结论段。</p>
+<div class="tw"><table>
+<thead><tr><th>文档</th><th>改了什么</th><th>依据</th></tr></thead>
+<tbody>
+<tr><td>母文档 §8</td><td>新增五条晚间增补；并写明它如何改变 §2 两条候选律</td><td>E9 / E10 / m86 / E6 / E8</td></tr>
+<tr><td>协议 §2 E0</td><td>E0 状态由【待定】改为 <strong>【部分已测·风格侧为否】</strong>，附 m86 读数</td><td><code>results/persona_distill.md</code></td></tr>
+<tr><td>尺子 §8</td><td>新增"首个实测"三条：表层≠风格、判据要带非退化维、剂量先于容量</td><td>同上</td></tr>
+<tr><td>活表</td><td>功能表加「人格 vs 习惯」【已测】；D7 剂量门；剂量表三行；参数量更正为 4,194,304</td><td>m86 / m57 快照</td></tr>
+</tbody></table></div>
+<p class="callout"><strong>一句话读法：</strong>今晚唯一的新知识是"习惯能写进权重、人格不能，且失败方式是过剂量退化"。
+其余四份文档的既有结论没有一条被推翻。</p>
+
+<section id="doc1"><h2 class="doc">睡眠重放方向 —— 记要 v1</h2><p class="note">三条撤回、两条候选律、E0–E5 的由来　·　来源 <code>SLEEP-REPLAY-v1.md</code></p><p>日期 2026-10-27（讨论于 10-26 夜至 10-27 晨）。用途：把"dream / compact continuity"这条支线钉下来。<strong>不是论文文本</strong>，v10 已冻结，本文档不触发任何修改。</p>
+<p>判据同 <code>CLAIMS-OFFENSIVE-v1.md</code>：每条都要能复算，能被打死。状态标记：</p>
+<ul><li>【已测】有本地结果文件，数字可直接复现</li><li>【算术】由已测的量做恒等或单位换算</li><li>【推论】从实测外推，未直接测</li><li>【假设】当前工作假设，还没有判别实验</li><li>【待定】实验设计已定，未跑</li><li>【已撤回】本轮讨论中我提出后又被否掉的</li></ul>
+<hr>
+<h2>0. 一句话</h2>
+<p><strong>人不是重放题，是重放经历。</strong> 现在 Δ 的保真度 99.6 % 是在 186 道题（格点）上量的，不是在 19,829 个位置（历史）上量的——这两件事的差别，就是这条支线的题目。</p>
+<hr>
+<h2>1. 本轮被收窄或撤回的三条</h2>
+<h3>R1 「压缩 KV / soft token 当第四种载体，就地、免费、精确」——【已撤回】</h3>
+<p>我上一轮说可以直接改 KV 而不训练。错在两点：</p>
+<p><strong>（a）soft token 要付膨胀率。</strong> 一个 soft token 不是"一个数"，是一整条全宽 KV 行：本引擎 <code>2 × 16 层 × 4 KV头 × 256 头维 = 32,768</code> 个值 = <strong>64 KiB</strong>（与 A1 的 KV 记账同源）。所以预算反过来算：</p>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>值数</th>
+<th>折成 soft token</th>
+</tr></thead><tbody>
+<tr><td>Δ（11.0 MiB BF16）</td><td>5,767,168</td><td><strong>恰好 176 行</strong></td></tr>
+<tr><td>2,048 个 soft token</td><td>67.1 M</td><td>128 MiB = Δ 的 <strong>11.6 倍</strong></td></tr>
+</tbody></table></div>
+<p>拿 Δ 的字节预算去开 soft token，只够 176 个位置。<strong>Δ 是函数，soft token 是表</strong>：表的 176 行按位置寻址、只在自身之后生效；Δ 的 5.77 M 参数被每个位置复用，拿到的是全域梯度。这与 prefix/soft-prompt 在知识注入上属于最弱一档 PEFT 的经验一致——它是控制旋钮，不是记忆。</p>
+<blockquote>注意：本条对更大模型更不利（每 token KV 随层数/头数上升），不是更有利。</blockquote>
+<p><strong>（b）蒸馏 KV 要反传，那就不是"拷一份"，是"拟合一份"。</strong> 要让 KV 表现得像教师，就得对 KV 求梯度。而这条反向更重：KV 前缀是 N 个全宽状态，梯度穿每个位置的 attention；Δ 只在 <code>down_proj</code> 上，反向是 $O(|R| \times \text{rank})$。<strong>同一笔写钱，更差的基底、更坏的条件。</strong> 所以它不是第四种载体，是第三种载体的一个劣化实现。</p>
+<h3>R2 「迭代压缩 N 次会不会崩」——【旁支，不是 dream 的内容】</h3>
+<p>我把它当成了"稳定性状态"的回答。它本身是个值得做的稳健性问题（v10 只测了<strong>一次</strong>压缩，生产压 N 次），但它回答的不是用户问的那件事。降级为旁支，见 §6。</p>
+<h3>R3 我误读的两个地方</h3>
+<ul><li>"probe = 压缩比"我读成了 decode 审计成本。实际指的是<strong>重放预算</strong>，不是推理时的探针。</li><li>"dream"我读成了稳定性，实际指的是<strong>probe 怎么选</strong>——重放集本身就是机制。</li></ul>
+<hr>
+<h2>2. 两条候选律，只能选一条</h2>
+<p>用户本轮澄清："人脑相当于一直在 decode，24 h 睡 8 h ⇒ 重放/做梦的 decode 总位置数至少应等于今天 H 的一半。"</p>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>律</th>
+<th>形式</th>
+<th>分母</th>
+<th>含义</th>
+</tr></thead><tbody>
+<tr><td>L1</td><td>压缩律</td><td>重放量 ∝ r</td><td>r</td><td>压得越狠，夜里越久</td></tr>
+<tr><td><strong>L2</strong></td><td><strong>值班律</strong></td><td><strong>重放位置 ≥ (1/3 ~ 1/2)·|H|</strong></td><td><strong>|H|</strong></td><td><strong>同底同速 ⇒ 值班比决定预算</strong></td></tr>
+</tbody></table></div>
+<p>两条不能同时成立（除非值班比本身随 r 变，而它不变）。<strong>采纳 L2【假设】</strong>：分母是"今天"，不是"压了多少"。</p>
+<p>L2 的两个数字【算术】：</p>
+<ul><li><strong>人类串行</strong>：\|H\|=200 k，一半 = 100 k 位置 ÷ 9.8 tok/s（<code>bench_q35.json</code>）= <strong>10,204 s = 2.83 h</strong>，落在睡眠里真正做梦的 1.5–2 h（数个 REM 周期）之内。</li><li><strong>LLM 并行</strong>：batch 333、103.4 ms/step ⇒ 一遍 300 步 = <strong>31.1 s</strong>，64 遍 = <strong>33 min</strong>。</li></ul>
+<p>即：<strong>8/24 不是选的，是同底同速的必然；并行不改变位置数，只压掉墙钟。</strong> 这也是唯一能让类比不显任意的读法。</p>
+<hr>
+<h2>3. 实测：现在 Δ 的重放根本不是 O(|H|)</h2>
+<p>这是本轮最硬的一条，也是 L2 与现状的冲突点。梯度预算实际是 $O(\text{格点} \times \text{遍数})$，不是 $O(|H|)$：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>实验</th>
+<th>唯一项</th>
+<th>遍数</th>
+<th>访问数</th>
+<th>结果</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr><td><code>m28_stepsweep</code></td><td>36 探针</td><td>4 / 8 / 16 / 32</td><td>144 → 1,152</td><td>train top1 <strong>.316 → .390 → .529 → .805</strong></td><td>【已测】32 遍仍在涨，<strong>未收敛</strong></td></tr>
+<tr><td><code>m49_budget</code></td><td>186 探针</td><td>128</td><td>23,808</td><td>canonical <strong>1.000</strong>（C128）/ .960（B128）</td><td>【已测】</td></tr>
+<tr><td><code>m43_batch</code></td><td>9,984 样本</td><td>64</td><td>638,976</td><td>canonical .9960；held-out：P1 .9688、diff_fact .9500、paraphrase .9875</td><td>【已测】</td></tr>
+</tbody></table></div>
+<p>三点读法：</p>
+<ol><li><strong>"多少重放才够"现在的答案不是"要很多"，而是"要少而重复"。</strong> m49 用 186 项 × 128 遍就把 canonical 顶到 1.000；m43 用 9,984 项 × 64 遍拿到 .9960。前者 23.8 k 次访问，后者 639 k 次访问——<strong>访问数差 27 倍，保真度只差 0.4 个点。</strong> 这本身就是"课程 &gt; 覆盖"的苗头，但两套 setup 不同，不能直接当证据。</li><li><strong><code>m28</code> 是唯一能看到收敛形状的</strong>：32 遍还在爬，且 <strong>effective rank 从 3.51 掉到 1.39</strong>（Δ 容量 64）。这与既有结论"瓶颈是写的填充、不是载体容量"一致——<strong>同一个现象：多跑遍数在把 Δ 往更低秩推。</strong></li><li><strong>顺带一个巧合</strong>：m43 的 9,984 恰好是 \|H20\| = 19,829 的 <strong>50.35%</strong>。是巧合就别当证据；但它至少说明 L2 那个量级不是随手写的。</li></ol>
+<hr>
+<h2>4. 对 v10 的后果（冻结，不改，只记账）</h2>
+<p>v10 的 tex/pdf 不动。以下是"以后改 v20 时要注意"的清单：</p>
+<ul><li><strong>不能写</strong>：重放的梯度成本是 $O(|H|)$。现在是 $O(\text{格点} \times \text{遍数})$，且实测访问数 23.8 k ≪ \|H\|。</li><li><strong>不能写</strong>：Δ 是"第四种载体"（R1 已撤回）。</li><li><strong>必须能答</strong>：保真度是在探针集上量的，所以 headline 28.4667 % 是<strong>"课程上的保真度"</strong>，不是全域保真度。审稿人一问"你凭什么选这些题"就塌在这句上。（v10 现有 §7 是否已覆盖——<strong>待核</strong>，本轮未查。）</li><li>L1/L2 都不进 v10。这是续作的律。</li><li><strong>不能写</strong>：重放"经验"比重放事实更有效——E5 未跑。同理不能写"蕴含优于事实"。</li><li>若 E5(f) 的 <strong>S_eq</strong>（同参数 5.77 M）在<strong>行为</strong>层也赢，则"外界纠错"这个用法的载体是 SFT 而不是 Δ，<strong>论文在这一类上只剩 A1/A3 的隔离与并发</strong>。这句要提前写进 v20 的 limitations，不要等审稿人问。</li><li><strong>不能写</strong>：把"不设限的 SFT"当作 Δ 的对照——那等于拿 H 比 176 token，恒真且无信息量。任何载体对比先钉携带量（§5 红线）。</li></ul>
+<hr>
+<h2>5. 实验：一次诊断、两条律、一个课程、一个名字、一个单位</h2>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>问什么</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr><td><strong>E0</strong></td><td>忠实拟合到底有没有拟合到非事实位</td><td>【待定】零训练，最先做</td></tr>
+<tr><td><strong>E1</strong></td><td>预算的分母是 |H| 还是 r</td><td>【待定】便宜档现在可跑</td></tr>
+<tr><td><strong>E2</strong></td><td>重放"经历"还是重放"问题"</td><td>【待定】</td></tr>
+<tr><td><strong>E3</strong></td><td>顺序</td><td>暂缓</td></tr>
+<tr><td><strong>E4</strong></td><td>该叫 dream 还是 replay</td><td>【待定】</td></tr>
+<tr><td><strong>E5</strong></td><td>重放"事实"还是重放"被外界推翻"</td><td>【待定】攻击性最强</td></tr>
+</tbody></table></div>
+<p><strong>红线（约束所有臂）：任何两个载体的比较，都必须先固定"携带量"。</strong> 不固定的比较其实是在比"谁能塞更多"，答案永远是多的一方——S 直接取 H 就复刻了 T，那不需要任何机制。<strong>δ 存在的全部理由就是压缩</strong>，所以"同参数"是前提，不是细节。这条我下面在 E5(f) 里自己违反了一次，已重写。</p>
+<h3>E0 —— 忠实拟合有没有拟合到"风格"【待定｜零训练，最先做】</h3>
+<p>目标就是复刻 H Teacher 的分布，风格与信息在同一个 KL 里，<strong>不是二选一</strong>。所以问题不是"要不要风格"，而是"现在的忠实拟合有没有到那一层"。拿 <code>m43</code> / <code>m49</code> 的已有 checkpoint，把 held-out 探针的逐位置 KL 按 token 类别切开（事实位 / 非事实位），与 base 比：</p>
+<ul><li>非事实位 KL 已接近教师 ⇒ <strong>风格随忠实拟合免费得到</strong>，E2 只需测泛化，写侧不必改；</li><li>非事实位 KL 明显高于事实位 ⇒ 现在的写是<strong>事实偏置</strong>的，要改支撑（见 E2）或改 loss 权重。</li></ul>
+<p>不需要重训、不需要新历史。<strong>这一步决定后面是"测泛化"还是"改写"。</strong></p>
+<h3>E1 —— 值班律 vs 压缩律【待定】</h3>
+<p>固定 \|H\|，只扫 \|S\|，测<strong>收敛所需的重放访问数 $N^*$</strong>。</p>
+<ul><li>L2 预测：$N^*$ <strong>平</strong>（分母是 \|H\|）。</li><li>L1 预测：$N^*$ <strong>随 r 上升</strong>。</li></ul>
+<p>分两档：</p>
+<ul><li><strong>便宜档（现在就能跑）</strong>：H20 上 \|S\| ∈ {2.5 k, 5 k, 10 k}，即 r ∈ {7.9, 4.0, 2.0}。只测<strong>单调性</strong>（$N^*$ 是否随 r 变），不测斜率。</li><li><strong>工作点档（要新历史）</strong>：r 落在 bracket [77.5, 154.9] 需要 \|H\| ≈ 250 k、\|S\| ≈ 2.5 k。生成器放大即可（~1,300 事务 × 150 实体 ≈ 900 格），教师前向 16 GiB KV（按本引擎 64 KiB/token 计），可行。【推论】</li></ul>
+<p>判据：把 $N^*$ 定义为 held-out top1 达到 canonical 平台 95 % 所需访问数，避免"跑到收敛"的主观阈值。</p>
+<h3>E2 —— 课程 vs 覆盖（这才是 dream 的正门）【待定】</h3>
+<p>等访问预算 ≈ 23.8 k，两条路：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>臂</th>
+<th>重放对象</th>
+<th>访问数</th>
+<th>备注</th>
+</tr></thead><tbody>
+<tr><td><strong>少而重复</strong></td><td>186 个格点 × 128 遍</td><td>23,808</td><td><code>m49</code> 已有两臂，可直接当基线</td></tr>
+<tr><td><strong>多而一遍</strong></td><td>|H20| 的一半 = <strong>9,914 个位置</strong> × 1 遍（位置级 KL）</td><td>9,914</td><td>新跑</td></tr>
+</tbody></table></div>
+<p>"位置级重放"的定义：在 H 中采样位置 $t$，教师看全 H，学生只看 $E+R+q$（该位置的局部尾），在位置 $t$ 上做全词表 KL。<strong>这就是"重放经历"的形式化</strong>，与现在的"格点问题"是同一个目标函数、不同的重放对象。学生侧 $O(|R|)$，9,914 位置 / batch 333 ≈ 30 批，成本与 m43 同量级。</p>
+<ul><li>若覆盖赢了：<strong>只重放位置、从没在任何格点上训练，却恢复了格点保真度</strong>——这是"梦境能把经历压成记忆"的最强证据。</li><li>若格点赢了：课程 &gt; 覆盖，且证明了 v10 的做法不是偷懒。</li></ul>
+<p><strong>"我全都要"之后，这条实验的意义升级了。</strong> 现在的格点课程，训练分布的支撑只有"问题→答案"；非事实位（虚词、标点、连接词）只出现在答案内部的少数 token 上。也就是说<strong>风格在当前课程下物理上不在训练分布里</strong>——不是权重给得小，是支撑根本不到。而位置级重放按构造覆盖 H 的每一个 token，于是 E2 的问题从"课程 vs 覆盖"变成：</p>
+<blockquote><strong>复刻答案，还是复刻教师？</strong> 格点重放是位置重放的子集。</blockquote>
+<p>这也给了 E0 的两种结局各自的下一步：非事实位没拟合上 ⇒ 换支撑；拟合上了 ⇒ 只需在未见内容上测泛化。</p>
+<p>两个回落风险要提前写进设计：位置级 KL 的 $\|S\|$ 依赖（位置越早、Δ 越远，权重怎么定）没有现成说法；以及 9,914 与 23,808 只是同量级，不是等预算，<strong>报告时必须并列绝对预算而不是比值</strong>。</p>
+<h3>E3（暂缓）顺序</h3>
+<p>人脑重放是串行交错的，干扰与巩固都在顺序里；Δ 现在是 IID 批拟合，等于"从不做梦"。等 E2 有结果再谈。</p>
+<h3>E4 —— 忠实重放 vs 污染重放（"dream" 这个名字的判据）【待定】</h3>
+<p>E1/E2 都不碰梦最扎眼的特征：<strong>重组与荒诞</strong>。IID 采样只给"跳"，不给"合成"。</p>
+<p>Hoel 的 <em>overfitted brain</em> 假说给了一个可操作的解释：<strong>梦是故意加噪的输入，用来防止巩固把系统过拟合到当天的样本</strong>（引用与出处<strong>待核</strong>，未读原文）。若成立，重放就该被故意污染——而现在 Δ 是忠实拟合教师，等于"做梦不许走样"。</p>
+<p>固定同一预算（建议 23,808 次访问，与 E2 对齐），四臂：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>臂</th>
+<th>重放目标</th>
+<th>预期</th>
+</tr></thead><tbody>
+<tr><td><strong>F 忠实</strong></td><td>现状：teacher on H</td><td>保真度上界、泛化下界</td></tr>
+<tr><td><strong>D_topic 内容污染</strong></td><td>保留句式，实体值换成 frame 内其它实体</td><td>事实位 KL ↑，非事实位不变</td></tr>
+<tr><td><strong>D_style 形式污染</strong></td><td>保留事实，改语域/措辞</td><td>事实位不变，非事实位 ↑</td></tr>
+<tr><td><strong>N null</strong></td><td>同范数随机低秩 ΔW</td><td>所有指标<strong>必须</strong>回落到 base</td></tr>
+</tbody></table></div>
+<p>D_style 的算子是现成的：<code>m48_pool.json</code> 每格 10 条 paraphrase，<code>m48_forms.json</code> 已测两个语域池（口语 / 正式）的<strong>保内容率 85.96 %（49/57）与 93.33 %（56/60）</strong>——即"改形式、留事实"这个操作本身是有实测支撑的，不是口头假设。</p>
+<p><strong>因变量必须分层</strong>，否则"变像了"分不清是风格变了还是把词换了：</p>
+<ul><li>逐位置 KL 按 token 类别切开——<strong>事实位</strong>（数字/实体）vs <strong>非事实位</strong>（虚词/标点/连接词），即"风格可归因 KL"，可复用既有 mask 事件管线；</li><li><strong>自由生成 PPL</strong>（不 teacher-forced），暴露 teacher-forced 掩盖的偏差；</li><li>held-out 格点 top1（保真度）；</li><li>结构层/词汇层的 JS + 判别器 AUC，作零 GPU 的下界证据。</li></ul>
+<p><strong>有效性纪律先过再报数</strong>（细则见 <code>STYLE-METRICS-v1.md</code> §4）：null 必须回落；长度直方图匹配重采样；锚点排序自检（同作者 / 同领域 / 跨领域须给出同一序）；"没测出差异"<strong>不写成"等效"</strong>，要 TOST 且等效界预先声明。</p>
+<p><strong>判据（预先声明）</strong>：若 D_topic 的 held-out 格点 top1 <strong>显著高于</strong> F（配对 bootstrap，CI 不跨零），则"走样是功能"——<strong>这个名字叫 dream 才有内容</strong>；否则荒诞只是副产物，名字收回成 <em>replay</em>。</p>
+<p>成本：三次同预算训练（与 <code>m43</code> 同量级）+ 零 GPU 指标，约一天。<strong>不需要新历史、不需要放大生成器</strong>，所以排在 E1 工作点档和 E2 之前。</p>
+<h3>E5 —— 外界纠错作为重放单位（"经验" vs "事实" vs "蕴含"）【待定｜攻击性最强】</h3>
+<p>对象不是"蕴含"，是<strong>信念被外部推翻的记录</strong>。它和 A→B 的差别在"目标能否由自己生成"：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>重放单位</th>
+<th>目标能否由模型自身生成</th>
+<th>判定</th>
+</tr></thead><tbody>
+<tr><td>事实 B</td><td>能（权重里就有，且 frame 内高度冗余）</td><td>冗余</td></tr>
+<tr><td>蕴含 A→B</td><td>能推</td><td>可约</td></tr>
+<tr><td><strong>纠错记录</strong>（以为是 X，世界说 ¬X）</td><td><strong>不能</strong></td><td><strong>外源锚</strong></td></tr>
+</tbody></table></div>
+<p>这也顺手解掉了我提过的一个矛盾（"最大梯度落在教师最不可靠处"）：纠错记录的目标由<strong>环境</strong>给出——工具输出、非零退出、用户驳回——不是教师断言。所以在这一类上，教师的可靠性问题消失了。</p>
+<p><strong>（a）C 臂的四段式模板。</strong> 缺一段就不算 C：</p>
+<pre><code>先验   我预计 &lt;X&gt;                  ← 动作前的断言
+动作   &lt;命令 / 调用&gt;                ← 可重放的外部交互
+反证   &lt;报错 / 非零退出 / 返回 Y&gt;    ← 外部锚，必须能定位到具体输出
+修正   改成 &lt;Z&gt;，因为 &lt;理由&gt;         ← 修正后的行为</code></pre>
+<p>只取"修正"、不取"先验"，学到的只是新值，不是"我错了"这件事。</p>
+<p><strong>（b）外部锚的定位规则（可自动切分，零成本）</strong>：<code>exit code != 0</code>；错误消息后紧跟参数变更的重试；用户在 3 轮内出现"不对 / 不是 / 但是"；自述型纠正（"我记错了""实际上"）。四条都能正则化地捞。</p>
+<p><strong>（c）必须拆"值"和"事件"。</strong> 修正后的值仍是点事实；被推翻<strong>这件事</strong>才是规则级信号（"默认配置不可信，先测"）。判据因此分两层：</p>
+<ul><li><strong>旧错复发率</strong>：修正后还犯不犯同一个错 → 只证明记住了值；</li><li><strong>转移测试</strong>：换一个同类但不同对象的隐藏默认值（没人告诉过你），看它会不会先验证 → 才证明学到了规则。</li></ul>
+<p><strong>（d）稀缺。</strong> 200 k 会话里 C 类大概几十条，撑不起 5.77 M 参数，单独喂会过拟合到单例。所以 <strong>C 当脊柱、F 当填充</strong>，比例当变量扫（1:0 / 1:1 / 1:4），不要选一种当全部。</p>
+<p><strong>（e）与 hardness 的 2×2 控制</strong>，防止把"难题有用"误读成"经验有用"：</p>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>学生已答对（KL≈0）</th>
+<th>学生答错（KL 高）</th>
+</tr></thead><tbody>
+<tr><td>事实 B</td><td>白跑（<code>m43</code> 的 G1 已 1.000）</td><td>难题挖掘，不新</td></tr>
+<tr><td>蕴含 / 纠错</td><td>白跑</td><td><strong>★ 要证明的格子</strong></td></tr>
+</tbody></table></div>
+<p><strong>（f）载体：Δ 还是 SFT —— 必须先固定携带量（我上一稿违反的就是这条，重写）</strong></p>
+<p>上一稿让 SFT 随便练，那个比较是<strong>恒真</strong>的：不限制 S 的容量，S 直接取 H 就复刻了 T，结论没有信息量。<strong>δ 存在的全部理由就是压缩</strong>，所以载体对比的前置条件是钉住"携带多少"。</p>
+<p>钉法：S 臂用<strong>同秩（64）、同层（FFN <code>down_proj</code> 60–63）、同参数量（5,767,168 = 11.0 MiB BF16）</strong>的 LoRA，只把目标函数从 KL 换成 CE。再用一个 2×2 把"目标"和"数据"分开：</p>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>只喂 C 四段</th>
+<th>喂全历史 H</th>
+</tr></thead><tbody>
+<tr><td><strong>同参数 5.77 M</strong></td><td><strong>S_eq ← 真正的比较</strong></td><td>S_data（同参数下多喂数据有没有用）</td></tr>
+<tr><td><strong>不限参数</strong></td><td>—</td><td>S_full ≈ H，<strong>平凡上界，只当天花板，不算比较</strong></td></tr>
+</tbody></table></div>
+<p>于是"S 凭什么不能拟合 T"有了准确答案：<strong>因为 S_eq 也只有 5.77 M。若 5.77 M 够复刻 T，Δ 早就做到了。</strong> 问题因此变成：</p>
+<blockquote><strong>在一模一样的 5.77 M 里，文本目标（四段记录）和分布目标（教师）谁用得更好？</strong></blockquote>
+<p>而按我们自己的实测，这个容量对当前项<strong>并不紧张</strong>（<code>m28</code> 的 effective rank 只有 2–3 / 64）——所以 S_eq 与 Δ 很可能都把各自的目标拟合上，差别只在<strong>泛化方向</strong>。这不坏：它把 E5 的判别点从"拟合"推到下一层。</p>
+<p>三层读数：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>层</th>
+<th>问什么</th>
+<th>同参数下的预期</th>
+</tr></thead><tbody>
+<tr><td><strong>值</strong></td><td>超时改成了 30 s 没有</td><td>两者都到，打平</td></tr>
+<tr><td><strong>事件</strong></td><td>记不记得"我原以为是 60 s、被什么推翻的"</td><td>打平（四段齐全的话）</td></tr>
+<tr><td><strong>行为</strong></td><td>遇到同类隐藏默认值时会不会<strong>先去验证</strong></td><td><strong>只有 Δ 有理论通路</strong>——行为不在文本里，文本只有一个实例；教师的分布才是"这个人遇到未知会怎么做"</td></tr>
+</tbody></table></div>
+<p><strong>判据（预先声明）</strong>：C 臂在<strong>转移测试</strong>上显著优于 F 与 I（配对 bootstrap，CI 不跨零），才配叫"经验"；否则它只是"更贵的事实"。若 <strong>S_eq</strong> 在<strong>行为</strong>层也赢，则针对这个用法 Δ 没有存在理由——这条要认。</p>
+<p>成本：F / I / C / S_eq / S_data 五臂，各与 <code>m43</code> 同量级；S_full 只跑一次当上界。总计约一天，加一次 LoRA-SFT。</p>
+<hr>
+<h2>6. 未决</h2>
+<ol><li><strong><code>m28</code> 为什么 32 遍还在爬、同时 rank 掉到 1.39</strong>——是容量不够，还是优化没停？这决定了"少而重复"是特性还是欠拟合的症状。</li><li><strong>位置级重放的权重</strong>：H 里哪些位置该被重放（信息密度、边界、被查询过的、被工具返回的）——这是"睡多久"之外的第二维，也可能就是 L2 之外真正该加的那一条。</li><li><strong><code>|S|</code> 的 swept 依赖</strong>：本轮之前的结论是 r\<em> 是配置相关的、不能搬运。E1 的便宜档如果显示 $N^</em>$ 随 r 变，那么"r\* 是常数"这件事在<strong>写</strong>这一侧也塌了——比现在只敢说"读侧依赖"更强。</li><li><strong>iterated compaction（R2）</strong>：单次压缩 → N 次压缩的稳定性，是 v10 的一个真边界（生产确实压 N 次）。纯推理可测，不占 GPU 训练预算。留作旁支。</li><li><strong>污染要不要 schedule</strong>：E4 只问"该不该污染"，不问"什么时候污染"。人不是整夜都荒诞（深睡偏字面、REM 偏联想），所以更可能是<strong>先忠实后污染</strong>或交替。这是 E4 出结果之后的第二问，现在设计会过拟合。</li><li><strong>"风格是函数、事实是表"</strong>——可测的不对称：风格与具体实体无关，事实是绑定。预测 Δ 在非事实位上的跨内容迁移<strong>显著好于</strong>事实位。若成立，这句话能立：<strong>Δ 复刻的是教师怎么说话，说什么还得靠覆盖</strong>，而且它给 E2 指了方向；若不成立，说明复刻是均质的，E2 的对比就没有结构可谈。</li><li><strong>C:F 比例与"经验"的可迁移性</strong>：E5 只回答"有没有用"，不回答"用多少"。若转移测试只在某个比例上成立，那个比例本身就是结论；若任何比例都不成立，说明"被推翻"仍然是被当事实学的，名字要退。</li></ol>
+<hr>
+<h2>7. 与 <code>STYLE-METRICS-v1.md</code> 的分工</h2>
+<p>目标不是"要不要风格"，而是<strong>复刻 H Teacher 的分布</strong>——风格与信息在同一个 KL 里，不存在二选一。所以风格不是一条独立的臂，它是 KL 在非事实位上的那一部分。下面只在<strong>测量</strong>上分家，不在<strong>目标</strong>上分家。</p>
+<p>那篇的尺子可以直接用，但<strong>参考分布要换</strong>：</p>
+<ul><li><strong>取</strong>：§5 的事实位 / 非事实位 KL 分解（= E0/E4 的因变量）、§4 的有效性检验与 TOST 纪律、§3 的 2×2（同内容 / 跨内容）、§3 的 null 对照。</li><li><strong>改</strong>：MAUVE / judge / 判别器 AUC 的参考分布必须是<strong>教师自己在同 prompt 上的生成</strong>，不是"doc 风格语料"。参考一换，这几样就从"风格迁移"变成"<strong>两个模型的输出是否同分布</strong>"——那正是 distill 的定义，也是 MAUVE 的标准用法。</li><li><strong>共用</strong>：<code>m48_pool</code> / <code>m48_forms</code> / <code>m47_phrasing</code> 的语域与措辞池，作 D_style 臂的算子（保留事实、改形式），或作判别器的锚点。</li></ul>
+<p>一句话：<strong>那篇量"像不像目标语料"，这里量"像不像教师"。</strong> 参考分布一换，两篇合流，不用并成两条线。</p>
+<hr>
+<h2>附：复算</h2>
+<pre><code>9,984 / 19,829                     = 0.50350          # §3 巧合
+198.5727 s / (30 × 64 = 1,920 步)   = 0.10342 s/步     # m43 → 103.4 ms
+186 × 128                          = 23,808           # m49 访问数
+100,000 / 9.8 tok/s                = 10,204 s = 2.83 h
+100,000 / 333                      = 300.3 步
+300.3 × 0.10342                    = 31.06 s          # 一遍
+31.06 × 64                         = 33.1 min         # 64 遍
+176 × 32,768                       = 5,767,168        # Δ 参数 = 176 行 KV
+2,048 × 65,536 B                   = 128 MiB = 11.6 × 11.0 MiB
+(19,829 / 2 = 9,914) ≈ 9,984       # 上述巧合的对齐量</code></pre>
+<p>数据来源：<code>.local-8b/m43_batch.json</code>、<code>.local-8b/m49_budget.json</code>、<code>.local-8b/m28_stepsweep.json</code>、<code>.local-8b/bench_q35.json</code>；KV 记账与 Δ 参数量见 <code>CLAIMS-OFFENSIVE-v1.md</code> A1。</p>
+<h2>8. 晚间增补（2026-10-27 夜）</h2>
+<ol><li><strong>状态依赖的塌落，原因是 <code>x</code> 出分布，不是干扰。</strong> E9：<code>Δ+FILL ≈ Δ+H2</code>，纯漂移；<code>Δ</code> 起点 0.024，加 1k 上下文塌到 0.56。<strong>量级待更正</strong>（参考缺前缀，见 <code>BIOMIMETIC-REGISTER-v1.md</code> §6.2 与 E13 §2.3）。</li><li><strong>"伪影论"撤回。</strong> E10：同文法、无本 H 事实的历史只造成 <strong>10.5 %</strong> 的全局损伤（判据要 ≥50 %），Δ 尺度却是 35 %。</li><li><strong>风格/人格这一侧出现第一个负结果。</strong> m86：习惯（单 token 规则）能加写，人格（8 轮对话）写不进去且<strong>退化</strong>；剂量门 <code>‖W‖_F</code> ≈ 1.5 × 同配方正常臂。→ 新增导出要求 <strong>D7</strong>（<code>BIOMIMETIC-REGISTER-v1.md</code> §3）。</li><li><strong>"跳跃"撤回，正确预测是"钝化"</strong>：训练集是袋子 ⇒ 更新是平均 ⇒ 生成更钝更泛。已进 §1 与仿生表 §5。</li><li><strong>代价轴补了三个数</strong>：文本载体比 Δ 温和 <strong>12–13×</strong>；1k 无关代码推动 <strong>0.420</strong>；账本载体比任何自然文本都温和（E6 两条 + E8）。</li></ol>
+<p><strong>这些怎么改变 §2 的两条候选律：</strong>"必须选"仍成立，"选什么"仍空；但"风格是免费得到的"<strong>不再能默认成立</strong>——它得先过剂量门。</p></section>
+<section id="doc2"><h2 class="doc">睡眠重放方向 —— 实验协议 v1</h2><p class="note">E0–E5 的预注册判据、红线、跑序　·　来源 <code>EXPERIMENTS-SLEEP-REPLAY-v1.md</code></p><p>日期 2026-10-27。这是 <code>SLEEP-REPLAY-v1.md</code> §5 的<strong>可执行版</strong>：六条实验（E0–E5）的臂、预算、读数、预注册判据、成本、对应主张、依赖资产。</p>
+<p>不是论文文本。v10 已冻结（<code>paper-fse-v10.tex</code> / <code>paper-AVCP-v10.pdf</code>），本文档不触发任何修改。</p>
+<p>状态标记：<strong>【已测】</strong> 有结果文件｜<strong>【待定】</strong> 有设计无数据｜<strong>【暂缓】</strong> 主动搁置</p>
+<hr>
+<h2>0. 红线（先于所有实验）</h2>
+<ol><li><strong>固定携带量。</strong> 任何两个载体的比较都必须先钉住"携带多少"。不固定的比较是在比"谁能塞更多"，答案永远是多的一方——S 直接取 H 就复刻了 T。δ 存在的全部理由就是压缩。E5(f) 曾违反此条，已重写。</li><li><strong>预注册判据。</strong> 每条实验的"赢"必须事先写死（效应量 + 区间判据），事后改判据等于没做。</li><li><strong>"没测出差异"不写成"等效"。</strong> 要 TOST，等效界预先声明。</li><li><strong>等预算报告绝对量。</strong> 两臂预算只同量级时，并列绝对预算，不报比值。</li></ol>
+<hr>
+<h2>1. 相关文件</h2>
+<p>所有路径相对于工作区根目录 <code>E:\MasterStudy\AdVance ComPact\</code>。</p>
+<div class="tw"><table>
+<thead><tr>
+<th>文件</th>
+<th>作用</th>
+</tr></thead><tbody>
+<tr><td><code>SLEEP-REPLAY-v1.md</code></td><td>母文档：三条撤回、两条候选律、实测、对 v10 的记账</td></tr>
+<tr><td><code>CLAIMS-OFFENSIVE-v1.md</code></td><td>主张清单 A1–C4 + <strong>D 组（已撤回，不得再写）</strong></td></tr>
+<tr><td><code>STYLE-METRICS-v1.md</code></td><td>风格尺子：§5 的 token 类别 KL 分解、§4 的有效性检验与 TOST</td></tr>
+<tr><td><code>paper-fse-v10.tex</code> / <code>paper-AVCP-v10.pdf</code></td><td><strong>冻结交付稿</strong>，不得改</td></tr>
+<tr><td><code>V10-CHANGES.md</code></td><td>v9→v10 变更记录</td></tr>
+<tr><td><code>实验结论.md</code></td><td>既有实验的过程结论（4.9 MB 级口径来源）</td></tr>
+<tr><td><code>待验证假设与实验设计.md</code></td><td>更早的假设清单，与本文档有重叠处以其为历史依据</td></tr>
+<tr><td><code>r-star及后续实验阶段报告-2026-10-26.md</code></td><td>bracket [77.5, 154.9] 的来源</td></tr>
+<tr><td><code>LOCAL-RESULTS-ADOPTION-v1.md</code></td><td>本地结果如何并入论文的判定</td></tr>
+<tr><td><code>ABC-MATRIX-v1.md</code></td><td>A∧B∧C 矩阵</td></tr>
+<tr><td><code>ENV-PIN.md</code></td><td>环境与版本固定</td></tr>
+<tr><td><code>.local-8b/probes.py</code></td><td>探针生成器（254 条 / 9 组，含 <code>--check</code>）</td></tr>
+<tr><td><code>.local-8b/m5/probes_manifest.json</code></td><td>探针清单（GPU 前校验）</td></tr>
+<tr><td><code>.local-8b/m24_poskl.json</code></td><td><strong>逐位置 KL + 值位/模板位分类</strong>（E0 的一半答案在此）</td></tr>
+<tr><td><code>.local-8b/m25_digitmass.json</code></td><td>逐位置 digit 质量分布</td></tr>
+<tr><td><code>.local-8b/m28_stepsweep.json</code></td><td>遍数扫描（4/8/16/32），含 effective rank</td></tr>
+<tr><td><code>.local-8b/m43_batch.json</code> + <code>m43_batch.pt</code></td><td>批训练结果与 <strong>Δ checkpoint</strong>（E0/E4 直接复用）</td></tr>
+<tr><td><code>.local-8b/m49_budget.json</code></td><td>186 项 × 128 遍两臂（E2 基线）</td></tr>
+<tr><td><code>.local-8b/m48_pool.json</code> / <code>m48_forms.json</code></td><td>每格 10 条 paraphrase + 语域池保内容率（E4 的 D_style 算子）</td></tr>
+<tr><td><code>.local-8b/m47_phrasing.json</code> / <code>m48_register.json</code></td><td>措辞/语域池（E4 备选算子）</td></tr>
+<tr><td><code>.local-8b/bench_q35.json</code></td><td>decode 9.8 tok/s、prefill 等成本原语</td></tr>
+<tr><td><code>tools/probe_dsh_session.py</code> / <code>scan_dsh_ratios.py</code></td><td>真实 dsh 会话挖 r 统计（<strong>只用于引擎侧统计与纠错模式挖掘</strong>）</td></tr>
+<tr><td><code>tools/scan_dsh_compactions.py</code></td><td>压缩事件与摘要长度配对</td></tr>
+</tbody></table></div>
+<hr>
+<h2>2. E0 —— 忠实拟合有没有到"非事实位"</h2>
+<p><strong>问题</strong>：目标就是复刻 H Teacher 的分布，风格与信息在同一个 KL 里。所以问题不是"要不要风格"，而是"现在的忠实拟合有没有到那一层"。</p>
+<p><strong>2026-10-27 增补（m86）——风格这一侧有实测了，答案是否定的。</strong> <code>results/persona_distill.md</code> 直接测了"把人设写进权重"：8 轮对话、116 个监督 token、300 步，测试时人设从上下文移除。结果不是"学到语气"，而是<strong>退化</strong>（3 条空回复、1 条 8 字符残片 <code>🎉🎉🎉 <strong></code>、1 条「休息」×65 的重复环），而 <code>‖W‖_F</code> = 17.99，是同配方三个正常臂（11.09 / 11.40 / 11.80）的 1.5 倍以上。所以 E0 现在分两句答：</strong>模板位已拟合（E0a）<strong>；</strong>风格未被写入，失败方式是过剂量退化（m86）<strong>。 E0 状态由【待定】改为 </strong>【部分已测·风格侧为否】。</p>
+<h3>E0a 值位 vs 模板位 ——【已测】</h3>
+<p><code>.local-8b/m24_poskl.json</code> 已经做了这件事。40 题、<code>off</code> = 无 Δ、<code>on</code> = 有 Δ：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>类别</th>
+<th>占比</th>
+<th>KL(off)</th>
+<th>KL(on)</th>
+<th>增益/位</th>
+<th>占剩余 KL(off)</th>
+</tr></thead><tbody>
+<tr><td>值位（数字/实体）</td><td>35.0 %</td><td>2.8924</td><td>1.9784</td><td>0.9140</td><td><strong>93.4 %</strong></td></tr>
+<tr><td>模板位（答案骨架、分隔、空白）</td><td>35.0 %</td><td>0.2042</td><td><strong>0.0401</strong></td><td>0.1641</td><td>6.6 %</td></tr>
+<tr><td>合计</td><td>—</td><td>1.0851</td><td>0.7073</td><td>0.3778</td><td>100 %</td></tr>
+</tbody></table></div>
+<p>三句话：</p>
+<ol><li><strong>模板位已经基本拟合</strong>：KL 0.2042 → 0.0401（−80.3 %），是值位残余的 1/49。</li><li><strong>剩下的差距 93.4 % 在值位</strong>：写完之后，这个载体还欠的全是事实。</li><li>这支持母文档 §6.6 的假说——<strong>风格是函数（免费得到），事实是表（要覆盖）</strong>；也解释了为什么 28.47 % 看起来像"记住题"。</li></ol>
+<p><strong>但</strong>：这里的"模板位"是答案骨架（<code>timeout_ms=</code>、<code>,</code>、空格），<strong>不是散文</strong>。这个口径<strong>不能</strong>拿去声称"风格已复刻"。</p>
+<h3>E0b 位置级 KL ——【已测·部分】（<code>E0b-POSKL-v1.md</code>）</h3>
+<p>选了第二条路（位置级重放），并且先把它做成<strong>测量</strong>（不重训）。仪器成立，57 个位置、6 臂、63 s。</p>
+<div class="tw"><table>
+<thead><tr>
+<th>载体</th>
+<th>值位</th>
+<th><strong>叙述位</strong></th>
+<th>模板位</th>
+</tr></thead><tbody>
+<tr><td>R（无载体）</td><td>2.433</td><td>9.360</td><td>2.798</td></tr>
+<tr><td>SR@1024（文本摘要）</td><td><strong>1.495</strong></td><td>9.031</td><td>2.694</td></tr>
+<tr><td>RD（Δ，m43 权重）</td><td>5.417</td><td>15.151</td><td>7.467</td></tr>
+</tbody></table></div>
+<p>三条读数：</p>
+<ol><li><strong>文字载体兑现的是「值」，不是「历史」</strong>：值位 −39 %，叙述位 −4 %（等于没动）。因为 S 是账本摘要，不含对话文本。</li><li><strong>叙述位对每个载体都是 ~9 nat</strong>：teacher 给「把」p=0.93，student 给 3.7e-07。缺口的量级是 9 nat，不是 0.1 nat。</li><li><strong>但 H 里其实没有散文</strong>：叙述类只占 4.8 % 的 token、3 个词型重复 55 遍。所以这次量的严格说是<strong>模板留存</strong>，不是风格。</li></ol>
+<p><strong>RD 那一列不能读成"Δ 有害"</strong>：m43 权重训在问题载体上，在续写载体上是分布外，它全线变差说明的是<strong>形式不迁移</strong>，不是没记住值。位置级陈述要等 E2 用位置级目标重训。</p>
+<p><strong>闸门</strong>：G0 teacher 复现率 <strong>79 %</strong>；G1 SR1024 &lt; R @ value（1.50 &lt; 2.43）；G2 对文本量单调（1.49 ≤ 2.18 ≤ 2.49）。原定的判据写法（「散文位 KL / 值位 KL 比值」）<strong>不成立</strong>：模板位是标点选择，熵高但无信息，比值不可比。改用上面三条。</p>
+<p><strong>成本</strong>：63 s（不是半天）。</p>
+<p><strong>仍未做（E0b-2）</strong>：要在散文上量，得先造一份带散文的 H；在此之前结论只能限定为"模板未留存"。</p>
+<p><strong>对应主张</strong>：<strong>C4</strong>（逐位置审计）的扩展；不新增主张。</p>
+<hr>
+<h2>3. E1 —— 值班律 vs 压缩律 ——【已测·设计被否】（<code>m51_e1.json</code>）</h2>
+<p><strong>问题</strong>：巩固预算的分母是会话长度 \|H\|，还是压缩比 r？</p>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>律</th>
+<th>形式</th>
+<th>预测</th>
+</tr></thead><tbody>
+<tr><td>L1</td><td>压缩律</td><td>重放量 ∝ r</td><td>N\* 随 r 上升</td></tr>
+<tr><td><strong>L2</strong></td><td><strong>值班律</strong></td><td>重放位置 ≥ (1/3 ~ 1/2)·|H|</td><td><strong>N\* 平</strong>（分母是 |H|）</td></tr>
+</tbody></table></div>
+<h3>结论先说：<strong>在现在的架构里这条问不出来，因为 \|S\| 没有路径进训练。</strong></h3>
+<p>Δ 是在<strong>无文本载体</strong>（<code>E + R + q</code>）上训的；\|S\| 只出现在<strong>评分</strong>里。所以 N\* 按构造不可能随 r 变——跑之前就该看出来。实测也确实如此，而且顺带暴露了一件更要紧的事。</p>
+<h3>实测（\|H\| = 3,559 token，\|S\| 用现成 5 档，r 按实际 body_tokens 算）</h3>
+<div class="tw"><table>
+<thead><tr>
+<th>载体</th>
+<th>r</th>
+<th>N=0</th>
+<th>250</th>
+<th>500</th>
+<th>1000</th>
+<th>2000</th>
+<th>4000</th>
+<th>8000</th>
+</tr></thead><tbody>
+<tr><td>|S|=64</td><td>154.7</td><td>0.218</td><td>0.273</td><td>0.315</td><td>0.277</td><td>0.328</td><td>0.358</td><td>0.303</td></tr>
+<tr><td>|S|=128</td><td>30.4</td><td>0.202</td><td>0.302</td><td>0.310</td><td>0.328</td><td>0.352</td><td>0.315</td><td>0.416</td></tr>
+<tr><td>|S|=256</td><td>16.7</td><td>0.247</td><td>0.350</td><td>0.342</td><td>0.386</td><td>0.411</td><td>0.340</td><td>0.439</td></tr>
+<tr><td>|S|=512</td><td>7.2</td><td>0.467</td><td>0.517</td><td>0.523</td><td>0.522</td><td>0.592</td><td>0.541</td><td><strong>0.367</strong></td></tr>
+<tr><td>|S|=1024</td><td>3.5</td><td>0.792</td><td>0.777</td><td>0.828</td><td>0.811</td><td>0.819</td><td>0.742</td><td><strong>0.370</strong></td></tr>
+<tr><td><strong>无文本（Δ 单独）</strong></td><td>—</td><td>0.225</td><td>0.215</td><td>0.251</td><td>0.291</td><td>0.433</td><td>0.715</td><td><strong>1.000</strong></td></tr>
+</tbody></table></div>
+<p>（40 题值位 top-1，SE ≈ ±0.04。）</p>
+<p>三条读数：</p>
+<ol><li><strong>Δ 单独饱和得快、稳</strong>：0.225 → 1.000，约 <strong>8,000 访问</strong>到顶。这是本项目第一个 7 点的 Δ 学习曲线，比 <code>m31</code> 的两点（2304 / 4608）细。</li><li><strong>加了 S 之后，训练越久越差</strong>：\|S\|=1024 从 0.828（N=500）一路掉到 <strong>0.370</strong>（N=8000）；\|S\|=512 从 0.592 掉到 0.367。而同一时刻 Δ 单独是 1.000。</li><li>所以 <strong>(S + Δ) 不是"两个载体叠加"，是一个被 Δ 覆盖掉的组合</strong>。</li></ol>
+<h3>由此得到的一条新事实：<strong>Δ 是载体绑定（carrier-bound）的</strong></h3>
+<p>Δ 不是"知识增量"，它是对 28 层以上行为的<strong>改写</strong>，只在它被训练的那个载体里有效。文本在场时它不去补 S 缺的东西，而是<strong>盖掉</strong> S。这也解释了为什么论文的四个臂里从来没有 <code>SR+Δ</code>（§6.1 只有 R / SR / RD / T）——不是没人想到，是这个组合本来就不成立。</p>
+<h3>对 E1 的处理</h3>
+<ul><li><strong>不作为 L1/L2 的证据</strong>：N\* 的分母问题预设了"重放读的是历史"，而 Δ 的当前训练根本不读 \|S\|。</li><li><strong>这条轴并进 E2</strong>：只有在<strong>位置级重放</strong>里（学生拿 S、目标来自 H 的位置），\|S\| 才真正改变 Δ 要学的东西，N\*(r) 才有内容。</li><li>若要保留独立的 E1，唯一的正确版本是"Δ 与 S 一起训"（学生载体含 S），但那已经不是原文的 L1/L2，而是"Δ 补 S 的漏"，答案会平凡地随 \|S\| 下降。</li></ul>
+<p><strong>成本</strong>：306 s（原估"三档 × 198.6 s/臂"）。</p>
+<p><strong>对应主张</strong>：<strong>不产出新主张</strong>。产出一个架构约束（Δ 与文本载体不可组合），并且撤掉"巩固预算 ∝ \|H\|"这条待产出的主张——它在当前架构里没有可测量的形式。</p>
+<hr>
+<h2>4. E2 —— 课程 vs 覆盖（复刻答案 vs 复刻教师）</h2>
+<p><strong>问题</strong>：重放"问题"还是重放"位置"。<strong>格点重放是位置重放的子集。</strong></p>
+<p><strong>设计</strong>：等访问预算 ≈ 23.8 k，两臂：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>臂</th>
+<th>重放对象</th>
+<th>访问数</th>
+<th>备注</th>
+</tr></thead><tbody>
+<tr><td>少而重复</td><td>186 格点 × 128 遍</td><td>23,808</td><td><code>m49_budget.json</code> 已有两臂，直接当基线</td></tr>
+<tr><td>多而一遍</td><td>|H20|/2 = <strong>9,914 个位置</strong> × 1 遍</td><td>9,914</td><td>新跑</td></tr>
+</tbody></table></div>
+<p><strong>位置级重放的定义</strong>：在 H 中采样位置 $t$，教师看全 H，学生只看 $E+R+q$（该位置局部尾），在 $t$ 上做全词表 KL。学生侧 $O(|R|)$。</p>
+<p><strong>成本</strong>：9,914 / batch 333 ≈ 30 批，与 <code>m43</code> 同量级。</p>
+<p><strong>读数</strong>：held-out 格点 top1、未见蕴含、E0b 的散文位 KL。</p>
+<p><strong>判据</strong>：位置臂在 held-out 格点上与格点臂的差，配对 bootstrap CI 不跨零即算分出胜负。<strong>报告并列绝对预算（23,808 vs 9,914），不报比值。</strong></p>
+<p><strong>风险</strong>：位置级 KL 的 $\|S\|$ 依赖（位置越早、Δ 越远，权重怎么定）无现成说法，需预先声明一个权重方案而不是事后调。</p>
+<p><strong>对应主张</strong>：<strong>替代 C2</strong>。C2 卡在剂量混杂（2,304 vs 5,120 更新，probe 同时 36→80）；E2 把轴从"覆盖多少"换成"重放什么"。若位置臂赢，C2 的等剂量对照可以不做——它问错了轴。</p>
+<hr>
+<h2>5. E3 —— 顺序【暂缓】</h2>
+<p>人脑重放串行交错，干扰与巩固都在顺序里；Δ 现在是 IID 批拟合。三臂：交错 / 打乱 / 分块。<strong>不挂主张</strong>，等 E2 有结果再谈。</p>
+<hr>
+<h2>6. E4 —— 忠实重放 vs 污染重放（"dream" 这个名字的判据）</h2>
+<p><strong>问题</strong>：IID 采样只给"跳"，不给"合成"。梦最扎眼的特征是重组与荒诞。Hoel 的 <em>overfitted brain</em> 假说认为梦是<strong>故意加噪的输入</strong>，用来防止巩固把系统过拟合到当天样本（引用<strong>待核</strong>）。若成立，重放就该被污染——现在 Δ 忠实拟合，等于"做梦不许走样"。</p>
+<p><strong>设计</strong>：固定预算 23,808 次访问，四臂：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>臂</th>
+<th>重放目标</th>
+<th>预期</th>
+</tr></thead><tbody>
+<tr><td><strong>F 忠实</strong></td><td>现状：teacher on H</td><td>保真上界、泛化下界</td></tr>
+<tr><td><strong>D_topic</strong></td><td>保留句式，实体值换成 frame 内其它实体</td><td>值位 KL ↑，模板位不变</td></tr>
+<tr><td><strong>D_style</strong></td><td>保留事实，改语域/措辞</td><td>值位不变，模板位 ↑</td></tr>
+<tr><td><strong>N null</strong></td><td>同范数随机低秩 ΔW</td><td>全部回落 base</td></tr>
+</tbody></table></div>
+<p>D_style 算子现成：<code>m48_pool.json</code> 每格 10 条 paraphrase；<code>m48_forms.json</code> 已测两个语域池的<strong>保内容率 85.96 %（49/57，口语）与 93.33 %（56/60，正式）</strong>——"改形式、留事实"有实测支撑。</p>
+<p><strong>读数</strong>（分层，否则分不清"风格变了"和"把词换了"）：E0 的 token 类别 KL 分解、自由生成 PPL（不 teacher-forced）、held-out 格点 top1、结构/词汇层 JS + 判别器 AUC（零 GPU 下界）。</p>
+<p><strong>有效性纪律先过再报数</strong>（细则 <code>STYLE-METRICS-v1.md</code> §4）：null 必须回落；长度直方图匹配重采样；锚点用<strong>受控扰动</strong>构造（同一文本 0/25/50/75/100 % 风格替换），不依赖人工判断；TOST 且等效界预先声明。</p>
+<p><strong>判据</strong>：若 D_topic 的 held-out 格点 top1 <strong>显著高于</strong> F（配对 bootstrap，CI 不跨零），则"走样是功能"——<strong>dream 这个名字才有内容</strong>；否则荒诞只是副产物，名字收回成 <em>replay</em>。</p>
+<p><strong>成本</strong>：四臂 × <code>m43</code> 量级 + 零 GPU 指标，约一天。不需要新历史。</p>
+<p><strong>对应主张</strong>：<strong>威胁 B1 的度量前提</strong>（"KL 越低越好"）。若污染让 held-out 变好，B1 的排序数字仍算得出，但意义变了。这是目前唯一能动摇 B 组的实验。</p>
+<hr>
+<h2>7. E5 —— 外界纠错作为重放单位</h2>
+<p><strong>问题</strong>：重放"事实"还是重放"被外部推翻的记录"。对象不是蕴含，是<strong>信念被外部推翻</strong>。</p>
+<div class="tw"><table>
+<thead><tr>
+<th>重放单位</th>
+<th>目标能否由模型自身生成</th>
+<th>判定</th>
+</tr></thead><tbody>
+<tr><td>事实 B</td><td>能（权重里就有，且 frame 内高度冗余）</td><td>冗余</td></tr>
+<tr><td>蕴含 A→B</td><td>能推</td><td>可约</td></tr>
+<tr><td><strong>纠错记录</strong>（以为是 X，世界说 ¬X）</td><td><strong>不能</strong></td><td><strong>外源锚</strong></td></tr>
+</tbody></table></div>
+<p>这也解决"最大梯度落在教师最不可靠处"的矛盾：纠错记录的目标由<strong>环境</strong>给出（工具输出 / 非零退出 / 用户驳回），不是教师断言。</p>
+<h3>(a) C 臂四段式模板（缺一段就不算 C）</h3>
+<pre><code>先验   我预计 &lt;X&gt;                  ← 动作前的断言
+动作   &lt;命令 / 调用&gt;                ← 可重放的外部交互
+反证   &lt;报错 / 非零退出 / 返回 Y&gt;    ← 外部锚，必须能定位到具体输出
+修正   改成 &lt;Z&gt;，因为 &lt;理由&gt;         ← 修正后的行为</code></pre>
+<p>只取"修正"不取"先验"，学到的只是新值，不是"我错了"这件事。</p>
+<h3>(b) 外部锚的定位规则（可自动切分，零成本）</h3>
+<p><code>exit code != 0</code>；错误消息后紧跟参数变更的重试；用户 3 轮内出现"不对 / 不是 / 但是"；自述型纠正（"我记错了""实际上"）。四条均可正则化。</p>
+<h3>(c) 拆"值"和"事件"</h3>
+<ul><li><strong>旧错复发率</strong>：修正后还犯不犯同一个错 → 只证明记住了值；</li><li><strong>转移测试</strong>：换一个同类但不同对象的隐藏默认值（没人告诉过你），看它会不会先验证 → 才证明学到规则。</li></ul>
+<h3>(d) 稀缺</h3>
+<p>200 k 会话里 C 类约几十条，撑不起 5,767,168 参数，单独喂会过拟合到单例。<strong>C 当脊柱、F 当填充</strong>，比例扫 1:0 / 1:1 / 1:4。</p>
+<h3>(e) hardness 2×2（防止把"难题有用"误读成"经验有用"）</h3>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>学生已答对（KL≈0）</th>
+<th>学生答错（KL 高）</th>
+</tr></thead><tbody>
+<tr><td>事实 B</td><td>白跑（<code>m43</code> 的 G1 已 1.000）</td><td>难题挖掘，不新</td></tr>
+<tr><td>蕴含 / 纠错</td><td>白跑</td><td><strong>★ 要证明的格子</strong></td></tr>
+</tbody></table></div>
+<h3>(f) 载体：Δ 还是 SFT —— 必须先固定携带量</h3>
+<p>不限制 S 的容量，S=H 就复刻了 T，比较恒真。S 臂用<strong>同秩（64）、同层（FFN <code>down_proj</code> 60–63）、同参数量（5,767,168 = 11.0 MiB BF16）</strong>的 LoRA，只把目标从 KL 换成 CE：</p>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>只喂 C 四段</th>
+<th>喂全历史 H</th>
+</tr></thead><tbody>
+<tr><td>同参数 5.77 M</td><td><strong>S_eq ← 真正的比较</strong></td><td>S_data</td></tr>
+<tr><td>不限参数</td><td>—</td><td>S_full ≈ H，<strong>平凡上界，不算比较</strong></td></tr>
+</tbody></table></div>
+<p>"S 凭什么不能拟合 T"的答案：<strong>因为 S_eq 也只有 5.77 M。若 5.77 M 够复刻 T，Δ 早就做到了。</strong> 于是问题变成：同样的 5.77 M 里，文本目标和分布目标谁用得更好。而该容量对当前项并不紧张（<code>m28</code> effective rank 2–3 / 64），所以 S_eq 与 Δ 很可能都拟合上，判别点在下一层。</p>
+<p>三层读数：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>层</th>
+<th>问什么</th>
+<th>同参数预期</th>
+</tr></thead><tbody>
+<tr><td>值</td><td>超时改成了 30 s 没有</td><td>打平</td></tr>
+<tr><td>事件</td><td>记不记得"原以为是 60 s、被什么推翻"</td><td>打平（四段齐全）</td></tr>
+<tr><td><strong>行为</strong></td><td>遇同类隐藏默认值会不会<strong>先验证</strong></td><td><strong>只有 Δ 有理论通路</strong></td></tr>
+</tbody></table></div>
+<p><strong>判据</strong>：C 臂在转移测试上显著优于 F 与 I（配对 bootstrap，CI 不跨零），才配叫"经验"；否则只是"更贵的事实"。若 <strong>S_eq</strong> 在行为层也赢，则这一类上 Δ 没有存在理由。</p>
+<p><strong>成本</strong>：F / I / C / S_eq / S_data 五臂，各与 <code>m43</code> 同量级；S_full 跑一次当上界。约一天。</p>
+<p><strong>注意（同一 session）</strong>：纠错发生在同一会话内，<strong>跨压缩必须继承</strong>——那是论文主线承诺，不是本实验的问题。跨会话不泄漏属 <strong>A3</strong>（并发），不在此。</p>
+<p><strong>对应主张</strong>：<strong>产出新主张</strong>（"经验是比事实更有效率的重放单位"）+ 检验 <strong>C1</strong>（可撤销）的价值 + 提供 <strong>C2</strong> 的内容维。</p>
+<hr>
+<h2>8. 主张映射总表</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>实验</th>
+<th>对应主张</th>
+<th>关系</th>
+</tr></thead><tbody>
+<tr><td>E0a</td><td>C4</td><td>已支持（模板位已拟合，93.4 % 残差在值位）</td></tr>
+<tr><td>E0b</td><td>C4 扩展</td><td>补测，或收窄结论</td></tr>
+<tr><td>E1</td><td>无现成条目；补 A2 写侧</td><td><strong>产新主张</strong>（预算 ∝ |H|，不 ∝ r）</td></tr>
+<tr><td>E2</td><td><strong>C2</strong></td><td><strong>替代</strong>其轴</td></tr>
+<tr><td>E3</td><td>—</td><td>暂缓</td></tr>
+<tr><td>E4</td><td><strong>B1 的度量前提</strong></td><td><strong>威胁自家结论</strong></td></tr>
+<tr><td>E5</td><td>新主张 + C1 + C2 内容维</td><td><strong>产新主张</strong></td></tr>
+</tbody></table></div>
+<p><strong>已撤回（D 组，不得再写）</strong>：r\* 消失 / Δ 超过全文历史；"16 MiB 等价 500 token"；全覆盖档的"无交点"；"Δ 更省算力"（不给 k）；"Δ 更省存储"（对压缩 KV）。</p>
+<hr>
+<h2>9. 跑序建议</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>顺序</th>
+<th>实验</th>
+<th>前置</th>
+<th>成本</th>
+</tr></thead><tbody>
+<tr><td>1</td><td>E0a</td><td>无（已完成）</td><td>0</td></tr>
+<tr><td>2</td><td><strong>E0b-1</strong></td><td>位置级原语（已完成：<code>m50_poskl.py</code>）</td><td><strong>63 s</strong></td></tr>
+<tr><td>3</td><td>~~E1~~</td><td>设计被否：|S| 无路径进训练（已完成：<code>m51_e1.py</code>，306 s）</td><td>—</td></tr>
+<tr><td>4</td><td>E4</td><td><code>m48</code> 池 + 四臂训练 + 风格尺子</td><td>半天</td></tr>
+<tr><td>5</td><td>E2</td><td>位置级训练目标（原语已现成）+ <strong>吞掉 E1 的 N\*(r)</strong></td><td>半天</td></tr>
+<tr><td>6</td><td>E5</td><td>生成器加 C 类素材</td><td>一天</td></tr>
+<tr><td>—</td><td>E1 工作点档</td><td>已随 E1 一并搁置（|H|=250k 只在有位置级训练后才有意义）</td><td>待定</td></tr>
+</tbody></table></div>
+<p><strong>一个偏要记住</strong>：六条里五条在预测自己赢，只有 E4 在审自家度量、E5(f) 的 S_eq 能让 δ 在某一类上失去存在理由。<strong>没有一条设计成"如果成立，δ 就该被去掉"。</strong> 补平这个偏的成本最低的做法是"完美记忆 vs 有损"（匹配知识量，比较新任务表现），目前<strong>未采纳、未写入</strong>。</p>
+<hr>
+<h2>附：复算</h2>
+<pre><code># E0a（.local-8b/m24_poskl.json，all 块，40 题）
+0.04013 / 0.20422 = 0.1965   → 模板位 −80.3 %
+1.97835 / 2.89236 = 0.6840   → 值位  −31.6 %
+0.04013 vs 1.97835 → 1/49
+share_of_kl_off: 值位 0.93405 / 模板位 0.06595
+
+# E1（H20 = 19,829）
+19,829 / 2,500 = 7.93 ; /5,000 = 3.97 ; /10,000 = 1.98
+
+# E2
+186 × 128 = 23,808 ; 19,829 / 2 = 9,914.5
+
+# E5(f)
+176 × 32,768 = 5,767,168 = Δ 参数数 = 11.0 MiB BF16（见 CLAIMS-OFFENSIVE A1）</code></pre>
+<p>数据来源：<code>.local-8b/m24_poskl.json</code>、<code>m43_batch.json</code>、<code>m49_budget.json</code>、<code>m28_stepsweep.json</code>、<code>m48_forms.json</code>、<code>m48_pool.json</code>、<code>m47_phrasing.json</code>、<code>bench_q35.json</code>。</p></section>
+<section id="doc3"><h2 class="doc">仿生对照表 —— 当前机制的生物学映射 v1</h2><p class="note">每个生物词必须挂量、测量、文件；四态；撤回不删　·　来源 <code>BIOMIMETIC-REGISTER-v1.md</code></p><p><strong>这是一份活文档。</strong> 它只记录<strong>我们正在做的那个机制</strong>（压缩边界上的巩固）的仿生对应，不覆盖整个生命周期。</p>
+<p>用途：让"梦/睡眠/记忆"这类词在项目里<strong>只有一种用法</strong>——每个词都必须挂着量、数据和证伪条件。</p>
+<hr>
+<h2>0. 维护规则</h2>
+<ol><li><strong>每个生物名词必须绑定三样东西</strong>：一个可测的量、一次实际测量、一个文件路径。缺一样 ⇒ 状态只能是【隐喻】。</li><li>状态只有四种：<strong>【已测】【已推】【隐喻】【已撤回】</strong>。不允许"大概""似乎"这类状态。</li><li><strong>撤回的条目不删除</strong>，移到 §5 并写明原因和日期。痕迹比整洁重要。</li><li>任何状态变化必须带日期 + 证据文件。</li><li>本表<strong>优先于</strong>任何散落在别处的仿生说法。冲突时以此为准。</li></ol>
+<hr>
+<h2>1. 结构对照</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>生物/架构概念</th>
+<th>LLM 里是什么</th>
+<th>状态</th>
+<th>证据</th>
+<th>若被证伪</th>
+</tr></thead><tbody>
+<tr><td><strong>快权重</strong></td><td>KV cache</td><td>【已推】</td><td><code>paper-fse-v10.tex</code> §1.3（MiTA 的二分）</td><td>—</td></tr>
+<tr><td><strong>慢权重</strong></td><td>冻结基座</td><td>【已推】</td><td>同上</td><td>—</td></tr>
+<tr><td><strong>中速权重</strong></td><td>Δ：session 局部、未合并、可清零的低秩加写</td><td>【已定】</td><td>同上；<code>CLAIMS-OFFENSIVE-v1.md</code> A1/A3</td><td>—</td></tr>
+<tr><td><strong>工作记忆</strong></td><td><code>R</code>（近期尾）</td><td>【已推】</td><td>容量由引擎阈值定</td><td>—</td></tr>
+<tr><td><strong>情景笔记</strong></td><td><code>S</code>（摘要）</td><td>【隐喻】<strong>暂不可用</strong></td><td>E9 里 <code>S@0 = 1.1892 ≈ R@0 = 1.1827</code> ⇒ 该臂没把内容带进去，<code>results/e9_two_channels.md</code> §1</td><td>修好 S 构造后可升级</td></tr>
+<tr><td><strong>入睡（边界）</strong></td><td>compact 事件</td><td>【已推】</td><td><strong>压力触发，非周期</strong>（睡眠是稳态压力驱动 + 昼夜门控）</td><td>—</td></tr>
+<tr><td><strong>死亡</strong></td><td>session 结束、<code>Δ=0</code> 逐位还原</td><td>【已定】<strong>非问题</strong></td><td>个体可复制可保存；逐位精确是相对生物的优势</td><td>—</td></tr>
+</tbody></table></div>
+<hr>
+<h2>2. 功能对照</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>生物概念</th>
+<th>LLM 机制</th>
+<th>状态</th>
+<th>证据（数 + 文件）</th>
+<th>证伪条件</th>
+</tr></thead><tbody>
+<tr><td><strong>系统巩固</strong></td><td>从全上下文教师写入 Δ</td><td><strong>【已测】</strong></td><td><code>KL_home = 0.0241</code>、<code>top1 = 0.995</code>（E9，28 题，对 H1）</td><td>—</td></tr>
+<tr><td><strong>状态依赖记忆</strong></td><td>上下文形状一变，痕迹调不出来</td><td><strong>【已测】</strong></td><td><code>0.0241 → 0.5623</code>（<strong>23×</strong>）；<code>Δ+FILL ≈ Δ+H2</code> ⇒ 不是干扰，是 <code>x</code> 出分布。<strong>量级待更正</strong>：E9 参考缺前缀，见 §6.2</td><td>参考补上前缀后若塌落消失</td></tr>
+<tr><td><strong>编造（confabulation）</strong></td><td>学错内容 ⇒ 比不学更差</td><td><strong>【已测】</strong></td><td><code>T_fill = 1.9525</code> vs <code>T_null = 1.1827</code>、<code>top1 0.080 vs 0.188</code>（E10）</td><td>—</td></tr>
+<tr><td><strong>重放带来鲁棒性</strong></td><td>在扰动前缀下重放</td><td><strong>【已测】</strong></td><td>中性 1024：<code>0.696 → 0.991</code>；外推到没见过的长度。但摘要臂 <code>0.330→0.348</code>、历史臂 <code>0.571→0.420</code>（m55）</td><td>泛化不超出重放过的分布 ⇒ 只能称"插值"</td></tr>
+<tr><td><strong>人格 vs 习惯</strong></td><td>习惯（单 token 位置规则）能加写；人格（8 轮对话）写不进去，且把生成搞崩</td><td><strong>【已测】</strong></td><td>喵 4/4（<code>‖W‖_F</code>=11.40）；人设 4/5 退化（8 字符残片 / 3 条空 / 135 字符「休息」×65，<code>‖W‖_F</code>=17.99），<code>results/persona_distill.md</code> §2</td><td>—</td></tr>
+<tr><td><strong>失真（梦的荒诞）</strong></td><td>温度采样的重放</td><td><strong>【待测】</strong></td><td>E13（J1：<code>ΔH(TS) &lt; ΔH(G)</code>）</td><td><strong>单调响应</strong>而非倒 U ⇒ "失真换分布"不成立</td></tr>
+<tr><td><strong>选材（日有所思）</strong></td><td>预算 &lt; 覆盖需求 ⇒ 必须选</td><td><strong>【已推】</strong></td><td>只推到"<strong>必须选</strong>"，未推到"<strong>选什么</strong>"</td><td>若预算足够覆盖，则"选择"不是必需</td></tr>
+<tr><td><strong>跳跃</strong></td><td>重放集是碎片袋</td><td>【已撤回】见 §5</td><td>—</td><td>—</td></tr>
+<tr><td><strong>意识流 / 加速</strong></td><td>—</td><td>【隐喻】</td><td>无任何测量</td><td>—</td></tr>
+<tr><td><strong>遗忘</strong></td><td>清零 / 被压缩掉</td><td>【隐喻】</td><td>未测</td><td>—</td></tr>
+<tr><td><strong>校准</strong></td><td>学生熵 vs 教师熵</td><td>【待测】</td><td>E13 读数 3</td><td>—</td></tr>
+</tbody></table></div>
+<hr>
+<h2>3. 被约束逼出来的要求（derived requirements）</h2>
+<p>这一节是整份表最有价值的部分：<strong>不是类比，是从实测失效反推出来的必要条件。</strong></p>
+<div class="tw"><table>
+<thead><tr>
+<th>#</th>
+<th>要求</th>
+<th>从哪来</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr><td>D1</td><td><strong>必须重放</strong>：<code>x</code> 的覆盖只能靠反复取样获得</td><td>E9：塌落由 <code>x</code> 出分布导致，<code>Δ+FILL ≈ Δ+H2</code> 排除竞争解释</td><td>【已推】</td></tr>
+<tr><td>D2</td><td><strong>必须选</strong>：预算 &lt; 覆盖需求</td><td>D1 + 固定访问预算</td><td>【已推】</td></tr>
+<tr><td>D3</td><td><strong>重放必须在变动的状态下进行</strong>，否则只对见过的那一维鲁棒</td><td>m55：中性维泛化、内容维不泛化</td><td>【已推】</td></tr>
+<tr><td>D4</td><td><strong>跳跃需要内容寻址的离散检索</strong>；加性固定矩阵给不出</td><td>Δ 是 rank-64 加性修正，无寻址、无切换、无多条目</td><td>【已推】⇒ 若"梦是跳跃的"成立，载体形状要改</td></tr>
+<tr><td>D5</td><td><strong>无输入重放</strong> 是 dream 与 rehearsal 的唯一分界线</td><td>现有写入始终喂着 H</td><td>【待测】（未设计）</td></tr>
+<tr><td>D6</td><td><strong>加权必须用采样实现</strong>，损失缩放无效</td><td>Adam 尺度不变 + 梯度裁剪；值 token ×10 逐位无变化</td><td>【已测】<code>results/skill_distill.md</code> L141</td></tr>
+<tr><td>D7</td><td><strong>写"倾向"前先过剂量门</strong>：<code>‖W‖_F</code> 超过同配方正常臂约 1.5 倍即退化，<strong>与训练 loss 无关</strong></td><td>m86：loss 0.0398 崩；m75 loss 0.0008 正常。范数 17.99 vs 11.09–11.80</td><td>【已推】单例（1 崩 vs 3 正常）</td></tr>
+</tbody></table></div>
+<hr>
+<h2>4. 剂量与正常值（供对照用）</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>量</th>
+<th>值</th>
+<th>来源</th>
+</tr></thead><tbody>
+<tr><td><code>‖ΔW‖_F / ‖W‖_F</code> @lr 3e-4</td><td><strong>21 %</strong> → 全局 KL 0.063</td><td>E6</td></tr>
+<tr><td>同上 @lr 6e-4</td><td><strong>81 %</strong> → 全局 KL 1.5768</td><td>E6</td></tr>
+<tr><td>同秩同范数随机 ΔW 的 KL</td><td>0.1025（训练量的 1/15）</td><td>E6</td></tr>
+<tr><td>4-bit 量化（nf4 往返）KL</td><td>0.0872</td><td>E6</td></tr>
+<tr><td>任意 1k 级前缀本身的位移</td><td>0.1924–0.2358</td><td>m57</td></tr>
+<tr><td>零信号下的漂移</td><td><code>‖ΔW‖ = 3.25</code>（fp16 噪声被 Adam 放大）</td><td>E10</td></tr>
+<tr><td>首次漂移</td><td>N=250 就已远离 H（0.269 vs 0.2034）</td><td>m59b</td></tr>
+<tr><td><strong>人设蒸馏 @300 步</strong>（lr 2e-4）</td><td><code>‖W‖_F = 17.99</code>（同配方正常臂 11.09 / 11.40 / 11.80）→ <strong>生成退化</strong>：3 条空、1 条 8 字符残片、1 条「休息」×65</td><td>m86，<code>results/persona_distill.md</code> §5</td></tr>
+<tr><td><strong>范数–步数关系</strong>（账本任务）</td><td>250 → 8,000 步：12.36 → 47.93，<strong>每翻一倍 ×1.31</strong></td><td>m57 六个快照</td></tr>
+<tr><td>参数量（rank 64 × 4 层 <code>down_proj</code>）</td><td><strong>4,194,304</strong>（旧文档 12.6M 是 3 倍高估）</td><td>m86 <code>.pt</code> 张量形状</td></tr>
+</tbody></table></div>
+<hr>
+<h2>5. 撤回区</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>条目</th>
+<th>撤回原因</th>
+<th>日期</th>
+</tr></thead><tbody>
+<tr><td><strong>"生成会跳跃"</strong></td><td>机制上反了：训练集是袋子 ⇒ 更新是平均 ⇒ 生成应当<strong>更钝更泛</strong>，不是更跳。正确的预测是"钝化"，与"跳跃"相反，可一测分开</td><td>2026-10-28</td></tr>
+<tr><td><strong>"伪影论"</strong>（全局损伤主要来自"有前缀"这件事）</td><td>E10 J1 不成立：同文法无本 H 事实的历史造成 <strong>10.5 %</strong> 的损伤（判据要 ≥50 %）。伪影只作次要项（约 10 %）</td><td>2026-10-28</td></tr>
+<tr><td><strong>"梦预设周期触发"</strong></td><td>睡眠是稳态压力驱动（腺苷）+ 昼夜门控，<strong>困了就睡</strong>；压力触发本来就是对的形式</td><td>2026-10-28</td></tr>
+<tr><td><strong>"五个槽四个空白"</strong></td><td><code>R</code> 有海马近期缓冲的现成解释；<code>S</code> 人本来也写笔记/台账；死亡可复制。四个都不是问题</td><td>2026-10-28</td></tr>
+</tbody></table></div>
+<hr>
+<h2>6. 边界：不能说什么</h2>
+<h3>6.1 映射到"机制类"，不到"机制"</h3>
+<p>本表所有条目都是<strong>人工制品</strong>上的对应，不是生物机制。没有代谢、没有发育与演化、没有个体差异（seed 不是个体）、"器官"是我们装上去的而不是长出来的。<strong>更像对一个合成器官做药理学，不是生理学。</strong></p>
+<h3>6.2 E9 的塌落量级待更正</h3>
+<p>E9 的参考是"只有 A、没有前缀"的 <code>H1</code>。但部署时上下文是 <code>E + 前缀 + …</code>，正确基准应当是 <code>E + A + 前缀 + …</code>。所以 <code>0.5623</code> 里混进了"前缀自己把模型推走多少"（m57 测到 0.19–0.24）。<strong>修正后应当明显更小，但必须重测，不能相减。</strong></p>
+<h3>6.3 词汇是先来的</h3>
+<p>"dream"这个词先出现，约束是后来的。所以每个词都要被本表挡一道：<strong>没有量和测量的一律【隐喻】。</strong></p>
+<h3>6.4 四个词现在还不能用</h3>
+<p><strong>跳跃、意识流、加速、日有所思</strong>——前三个无测量，第四个只推到"必须选"。写论文时若要出现，必须标【隐喻】。</p>
+<hr>
+<h2>7. 更新日志</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>日期</th>
+<th>变更</th>
+</tr></thead><tbody>
+<tr><td>2026-10-28</td><td>建表。结构 7 条、功能 11 条、导出要求 6 条、剂量 7 条、撤回 4 条。</td></tr>
+<tr><td>2026-10-28</td><td>并入 E10（伪影论撤回）与 E9（状态依赖已测、S 臂不可用）的结果；新增 D6（加权必须用采样）。</td></tr>
+<tr><td>2026-10-28</td><td>并入 m86（人设蒸馏）：功能表新增「人格 vs 习惯」【已测】；导出要求新增 D7（剂量门，【已推】单例）；剂量表新增范数–步数关系与人设臂；更正参数量 4,194,304。</td></tr>
+</tbody></table></div></section>
+<section id="doc4"><h2 class="doc">进攻性主张清单（v1）—— 每条标明是否成立</h2><p class="note">哪些话现在能写、哪些必须等实验　·　来源 <code>CLAIMS-OFFENSIVE-v1.md</code></p><p>日期 2026-10-26。用途：v20 的选题依据。<strong>不是论文文本</strong>，是"哪些话现在就能写、哪些必须等实验"。</p>
+<p>判据：一条进攻性主张必须说出<strong>别人做不到的功能</strong>，并且这句话的每个量都要能复算。防御性主张（"我们没有声称 X"）不进本表。</p>
+<hr>
+<h2>A. 现在就能写（不需要新实验）</h2>
+<h3>A1 存储：等保真处不劣，且不占窗口位置 —— <strong>成立（算术）</strong></h3>
+<ul><li>Δ = 5,767,168 参数 = <strong>22.0 MiB FP32 / 11.0 MiB BF16</strong>（论文 §3.3）。</li><li>本引擎 KV = <strong>64 KiB/token</strong>（§1.2：2×16×4×256×2 B）。</li><li>⇒ <strong>Δ ≡ 176 token 的携带 KV</strong>（BF16）/ 352（FP32）。</li><li>保真度反转区间是 <strong>128–256 token</strong>（§5.2 的 bracket）。<strong>176 落在区间内。</strong></li><li>对照：1000-token 前缀的 KV = <strong>64 MiB</strong>，Δ 小 3.9×（FP32 小 2.9×）；1000 个窗口位置 → 0。</li><li><strong>红线</strong>：与压缩 KV（890 B/token）比，Δ ≡ ≈13,000 token，更贵。所以只能钉在"本引擎、与携带文本相比"。</li></ul>
+<h3>A2 算力：分段的，而且交点以下不成立 —— <strong>成立（算术），必须按 k 写</strong></h3>
+<ul><li>$\text{FLOPs}_\Delta = 2 \times 5{,}767{,}168 = 11.5$ MFLOP/token（每参数 2 FLOP，精确）。</li><li>携带 k 个 token：$64\,d_{model}\,k \approx 0.33$ MFLOP × k（$d_{model}=5120$）；27B 前向 ≈ 54 GFLOP/token。</li></ul>
+<div class="tw"><table>
+<thead><tr>
+<th>k</th>
+<th>前缀注意力</th>
+<th>占前向</th>
+<th>Δ 占前向</th>
+</tr></thead><tbody>
+<tr><td>128–256</td><td>0.04–0.08 GFLOP</td><td>0.08–0.16%</td><td>0.02%</td></tr>
+<tr><td>1000</td><td>0.33</td><td>0.61%</td><td>0.02%</td></tr>
+<tr><td><strong>16,384</strong></td><td>5.4</td><td><strong>10%</strong></td><td>0.02%</td></tr>
+<tr><td>163,840</td><td>54</td><td><strong>~100%</strong></td><td>0.02%</td></tr>
+</tbody></table></div>
+<ul><li><strong>可写</strong>："算力优势在携带长度超过约 1.6 万 token 后成为一阶项。"</li><li><strong>不可写</strong>："Δ 更省算力"而不给 k——在论文自己的交点（128–256）处差 0.08–0.16 个百分点。</li></ul>
+<h3>A3 每会话独立、可并发 —— <strong>成立（算术 + 设计性质）</strong></h3>
+<ul><li>合并 $W'=W+BA$ 要写 <strong>约 1.4 GB</strong>（FP32）/ 712 MB（BF16），是适配器本身的 <strong>≈60×</strong>（$d_{ff}/64 \times d_{model}/(d_{model}+d_{ff})$）。</li><li>且合并需要原始副本才能精确还原，融合后<strong>不是逐位</strong>（1e-7 级）；N 个并发会话 → N×1.4 GB 或串行。</li><li>旁路方案：N × 22 MiB，逐位清零。</li><li><strong>这是"不合并"的真正理由，不是"最小最可审计"。</strong></li></ul>
+<hr>
+<h2>B. 成立但只有一份历史（需要第二份历史才够格当结论）</h2>
+<h3>B1 三种载体的排序 —— <strong>成立（单历史）；待复现</strong></h3>
+<p>同一 27B、同一 H20、同一批 64 封存题、同一教师窗口（<code>recurrent-state-baseline-20261026</code>）：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>载体</th>
+<th>KL</th>
+<th>相对 R0</th>
+<th>CI</th>
+</tr></thead><tbody>
+<tr><td>R0</td><td>0.357786503</td><td>—</td><td>—</td></tr>
+<tr><td>原生 GDN 状态</td><td>0.334496910</td><td><strong>6.51%</strong></td><td>[3.76, 10.35]</td></tr>
+<tr><td>写入的 Δ</td><td>0.255936643</td><td><strong>28.47%</strong></td><td>[19.24, 35.69]</td></tr>
+<tr><td>状态 + Δ</td><td>0.250695604</td><td>29.93%</td><td>[22.23, 35.97]</td></tr>
+</tbody></table></div>
+<ul><li>State−RD = <strong>+0.0786</strong> [0.0281, 0.1374]：<strong>排零</strong>，状态单独明显弱于 Δ。</li><li>StateD−RD = −0.0052 [−0.0148, <strong>+0.0044</strong>]：<strong>跨零</strong>，组合优于 Δ <strong>未建立</strong>。</li><li><strong>可写</strong>："模型自带的递推状态只回收六分之一，写入的 Δ 回收四分之一以上，两者叠加的增量尚未建立。"</li><li><strong>缺</strong>：第二份历史上的状态臂。（另注意语义差：StateD 只在 continuation 开 Δ，RD 是全程开。）</li></ul>
+<h3>B2 头条数字在新窗口复现 —— <strong>成立</strong></h3>
+<p><code>RD_new = 28.4667% [19.2358, 35.6860]</code>（1,825 s、新 T_warm 教师根、390 次前向）对论文表 4 的 <strong>28.47% [19.14, 35.79]</strong>。<strong>同一数字在新一轮运行中复现。</strong></p>
+<hr>
+<h2>C. 待验证（有设计、没数据）</h2>
+<h3>C1 精确可撤销的会话记忆（功能级） —— <strong>待验证</strong></h3>
+<ul><li>现在只有 I3 的<strong>断言</strong>（Δ=0 时逐位恒等），没有<strong>行为</strong>演示。</li><li>设计：一条历史早期写「别用敬语」；边界后对 16 个新请求从 T / SR / RD / <strong>Δ 清零</strong> 四臂生成；数<strong>表面标记</strong>（您/你、称呼、句末形式）。</li><li>预期：T ≈ RD 的你-率；SR ≈ 0；清零 ≈ R0（逐位）。</li><li><strong>不需要 gold</strong>：判的是表面属性，教师本身定义它。成本：一条历史 + 一次写入。</li><li><strong>这是全文唯一能让读者说"他们真让模型记住了刚才那个人"的实验。</strong></li></ul>
+<h3>C2 覆盖是容量杠杆 —— <strong>待验证（剂量混杂）</strong></h3>
+<p>9B 的等价文本量（<code>minimal-two-claims-v1/RESULTS-rstar-onwards-v1.md</code> L169/L269）：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>覆盖</th>
+<th>等价文本</th>
+<th>更新数</th>
+</tr></thead><tbody>
+<tr><td>未覆盖（36 probe）</td><td><strong>540–650 token</strong></td><td>2,304</td></tr>
+<tr><td>部分覆盖（80 probe）</td><td><strong>890–1180 token</strong></td><td>5,120</td></tr>
+<tr><td>全覆盖</td><td>无交点</td><td>9,984</td><td>← <strong>已撤回</strong></td></tr>
+</tbody></table></div>
+<ul><li>前两档差 <strong>1.6×</strong>，但更新数同时从 2,304 升到 5,120。</li><li><strong>缺</strong>：等剂量对照（同 5,120 更新、只换 36 vs 80 probe）。若等剂量下仍升到 ~1000 token，"覆盖买容量"成立。</li></ul>
+<h3>C3 覆盖准则（从账本到判据） —— <strong>部分成立</strong></h3>
+<ul><li>已有：<code>probes.py</code> + <code>probes_manifest.json</code>（254 条、9 组、<code>--check</code> 在 GPU 前跑），当场抓到三件事（重复题面、m47 训练措辞含留出题、<code>-tr0/-te0</code> 下标冲突）。</li><li>已有：按（实体 × 字段 × 措辞家族）的覆盖分类轴、剂量与覆盖分离的设计。</li><li><strong>没有</strong>：覆盖判据（"问够了"的定义）、抽样框、数量/分布的敏感性分析。</li><li>论文三处"we have no procedure for choosing one / no coverage criterion / unsolved here" 应改为<strong>有账本、无准则</strong>。</li></ul>
+<h3>C4 压缩的逐位置审计（工具级） —— <strong>部分成立</strong></h3>
+<ul><li><code>r-assistant-gap</code>：R 内 6 条 assistant 正文、207 位置，T‖R 均值 <strong>0.1343</strong> nats/token；<strong>回复正文 0.2475、工具调用 0.0555</strong>；<strong>97.5% 落在第一笔事务</strong>。</li><li>能说明：全文教师与截断尾部的分歧集中在<strong>模型自己写过的话</strong>上，不在工具返回的事实上。</li><li><strong>不能说明</strong>：语体连续性、事实正确率、这是一般规律（单份 R、三笔事务、无 gold、无 CI）。</li></ul>
+<hr>
+<h2>D. 已撤回（不得再写）</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>撤回的主张</th>
+<th>原因</th>
+</tr></thead><tbody>
+<tr><td>"r\* 消失" / "Δ 超过全文历史"</td><td>m39 的 40 题里 <strong>12 题在训练集内</strong>；且对照是历史整理出的 55 行表，不是产生目标的全文教师</td></tr>
+<tr><td>"16 MiB 等价 500 token"</td><td>未检出差异不构成统计等效（r-star 报告 L161 明确驳回）</td></tr>
+<tr><td>全覆盖档的"无交点"</td><td>同第一行（污染 + 对照错）</td></tr>
+<tr><td>"Δ 更省算力"（不给 k）</td><td>A2：在 128–256 token 处差 0.08–0.16 个百分点</td></tr>
+<tr><td>"Δ 更省存储"（对压缩 KV）</td><td>A1 红线：对 890 B/token 的缓存，Δ ≡ ≈13k token</td></tr>
+</tbody></table></div>
+<hr>
+<h2>一句话总纲（可当 v20 摘要的骨架）</h2>
+<blockquote>一次边界写入把一段会话变成<strong>每会话独立、可逐位撤销</strong>的参数状态：它的常驻存储等价于 176 token 的携带前缀，而那个长度正落在它与文本互换保真度的区间内；它回收的教师分布差距是模型自带递推状态的四倍以上；在等存储处它不劣于文本，并且不占用任何窗口位置。</blockquote>
+<p>四个分句对应 A1 / A1+§5.2 / B1 / A1+A3——<strong>全部可复算，没有一句依赖未做的实验。</strong></p></section>
+<section id="doc5"><h2 class="doc">文风（style）量化方法提案 v1</h2><p class="note">四层拆解、五类方法、2×2 交叉　·　来源 <code>STYLE-METRICS-v1.md</code></p><ul><li>日期：2026-10-27</li><li>适用：Qwen3.5-9B（本机）/ Qwen3.8-27B（服务器）上的 LoRA / compact-delta 后训练评测</li><li>状态：<strong>方法提案，尚无实测结果</strong>。本文不构成任何容量或效果结论。</li></ul>
+<h2>0. 问题定位</h2>
+<p>现有尺子（teacher-forced KL / PPL，条件在 Q 上）测的是"给定问题后的答案分布保真"。而文风主要活在两个它不覆盖的地方：</p>
+<ol><li><strong>自由生成区域</strong>（不是 teacher-forced 的 Q→target 路径）；</li><li><strong>非事实承载位置</strong>（虚词、标点、连接词、句式），这些位置在逐位置 KL 里被事实 token 稀释掉了。</li></ol>
+<p>这两个区域既不重叠，也不该用同一个指标。下文给出可落地的方法、实验设计，以及必须先过的有效性检验。</p>
+<h2>1. 先把"文风"拆成可测的四层</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>层</th>
+<th>例子</th>
+<th>该用什么尺子</th>
+</tr></thead><tbody>
+<tr><td>结构层</td><td>段长、句长、列表/标题层级、标点密度</td><td>分布距离（KS/EMD/JS），确定性</td></tr>
+<tr><td>词汇层</td><td>虚词、句首连接词、语气词、术语密度</td><td>char/word n-gram 分布 + JS</td></tr>
+<tr><td>语用层</td><td>人称、指令口吻、修辞密度、正式度</td><td>判别器 / probe / rubric</td></tr>
+<tr><td>分布层</td><td>整段文本"像不像"目标语料</td><td>MAUVE、嵌入分布距</td></tr>
+</tbody></table></div>
+<p><strong>关键认知</strong>：文风不是标量。任何单一分数（包括 MAUVE）都是加权和，权重是人为编的。因此做法是：<strong>per-dimension 报 + 一个预先声明的聚合分</strong>，聚合分只作次要终点。</p>
+<h2>2. 五类方法，按"便宜且硬"排序</h2>
+<h3>A. 风格特征向量 + JS/EMD（最该先做）</h3>
+<p>每样本抽一个向量：句长分布、标点率、句首虚词直方图、char 1–3gram top-k 频率、人称分布、列表项数。然后算 <code>JS(gen ‖ doc)</code> 与 <code>JS(base ‖ doc)</code>，配对 bootstrap 取 CI。</p>
+<ul><li>优点：零 GPU、确定性、可独立复算（符合既有"独立 FP64 复算"口径）。</li><li>缺点：对 paraphrase 敏感度一般，所以只当<strong>下界证据</strong>。</li></ul>
+<h3>B. 判别器 AUC（操作化定义最强）</h3>
+<p>训线性/小 MLP 分类器，输入为 A 的特征向量，标签为 <code>Δ生成 / base生成 / 目标语料</code>。 AUC 高 = 风格确实变了；再做 held-out 文档的跨域判别，即可说"变的是风格而不是这个话题的词"。</p>
+<p>这是把文风定义成"OOD 可分的表面统计"，可证伪。 <strong>注意</strong>：判别器只能用表面特征（禁 embedding），否则会学到话题。</p>
+<h3>C. 分布级距离：MAUVE / Fréchet-MMD</h3>
+<p><code>MAUVE(gen_dist, doc_dist)</code> 同时惩罚"不像"和"塌缩"，但对长度和多样性极敏感。 adapter 很容易靠"变长"刷分，因此必须做<strong>长度直方图匹配的重采样</strong>后再算，否则数字不能报。嵌入分布距（均值+协方差 Fréchet）同理。</p>
+<h3>D. 残差流里的"风格方向"投影（已有 hook 基础设施，性价比最高）</h3>
+<p>用 doc 风格语料 vs 中性语料各自生成，取末层 hidden state 做 difference-in-means 得到风格方向 <code>u</code>，再测 Δ 模型生成的激活在 <code>u</code> 上的投影变化，配对 CI。本质是"找体内可复现的风格坐标"，比黑箱指标更能解释 L28 那种单层贡献。</p>
+<h3>E. LLM-judge rubric（只做假设生成，不做结论）</h3>
+<p>给 6–8 个维度打 1–5 分。但必须报<strong>信度</strong>：</p>
+<ul><li>换 judge、换顺序、重复 3 次，算 ICC / Krippendorff α；</li><li>用人造锚点验证（已知"学术风/口语/新闻"的样本，judge 必须排对序）；</li><li><strong>judge 不显著不能当等效</strong>；只有它和 A/B 同向时才敢写进结论。</li></ul>
+<h2>3. 实验设计：2×2 交叉，才能把风格和内容分开</h2>
+<p>单看"变像了"无法排除"只是把词换成 doc 里的词"。必须交叉：</p>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>同内容</th>
+<th>跨内容（新题/新实体）</th>
+</tr></thead><tbody>
+<tr><td>doc 风格</td><td>风格保真度 ↑</td><td>★ 主终点：风格是否迁移</td></tr>
+<tr><td>中性风格</td><td>内容不变性（回归）</td><td><strong>null 对照</strong>（应接近 base）</td></tr>
+</tbody></table></div>
+<ul><li>用<strong>跨内容</strong>的生成测风格迁移；</li><li>用<strong>同内容</strong>的生成测内容损失；</li><li>加一条 null：把 ΔW 换成同范数的随机低秩矩阵，所有风格指标应回落到 base 水平。<strong>这条过了，指标才可信。</strong></li></ul>
+<h2>4. 必须先做的两个有效性检验（否则数字没意义）</h2>
+<ol><li><strong>锚点排序检验</strong>：拿 3–5 组"已知风格差距有大小关系"的语料（同作者 vs 同领域 vs 跨领域），度量必须给出同样的序。排不对 → 它测的是话题或长度。</li><li><strong>长度/多样性混淆</strong>：所有指标先做长度匹配重采样；MAUVE 额外做"打乱 token 顺序"的退化检验（应该掉下来；不掉说明它只看了 unigram 词袋）。</li></ol>
+<p>统计口径沿用既有报告习惯：<strong>"没测出差异"不要写成"等效"</strong>，要做 TOST（等效界预先声明，例如 JS 差异 &lt; 0.02 才算等效）。</p>
+<h2>5. 补上现在缺的那半把尺子</h2>
+<p>KL/PPL 全锁在 Q 上，建议再加两条，成本都低：</p>
+<ul><li><strong>风格位 KL 分解</strong>：把逐位置 KL 按 token 类别切开——事实位（数字/实体）vs 非事实位（虚词/标点/连接词）。后者即"风格可归因 KL"，与既有 mask 事件基础设施兼容，可直接复用 <code>RESULTS-main-v1</code> 的 bootstrap 脚本。</li><li><strong>自由生成 PPL</strong>：让模型自回归跑完再拿参考模型打 PPL，暴露偏差会显出来；teacher-forced PPL 掩盖了它。</li></ul>
+<h2>6. 最小可行版（一周内）</h2>
+<ol><li>A（JS + 长度匹配）</li><li>B（判别器 AUC）</li><li>null 对照</li><li>锚点排序自检</li></ol>
+<p>跑通后再上 C / D，E（judge）最后加。结果字段对齐现有 <code>MAIN-REVIEW-*.json</code> 结构，便于并入阶段报告。</p>
+<h2>7. 不要用的东西</h2>
+<ul><li>ROUGE / BLEU 对 doc：惩罚 paraphrase，测的是词面重叠，不是风格。</li><li>单样本 KL。</li><li>直接在 doc 上算 PPL 当"风格分"：可作参考，但与内容新颖度混淆。</li><li>embedding 余弦相似度：会被话题主导。</li><li>只看聚合分不看分维度。</li></ul>
+<h2>8. 首个实测：风格进权重失败，且现有判据分不清"学短了"和"崩了"（2026-10-27）</h2>
+<p><code>results/persona_distill.md</code> 是第一个把"风格是否进权重"当主判据的实测（8 轮对话写进 Δ，测试时人设移出上下文）。三条可直接引用的经验：</p>
+<ol><li><strong>表层统计量不等于风格。</strong> 唯一"变好"的指标是"每行 ≤30 字"，而它同时把 3 条空回复算成合格。长度、行数属于 §1 的第 1 层（表层），<strong>不能当第 2/3 层（语气、结构）的证据</strong>。</li><li><strong>判据必须带"非退化"维。</strong> 空输出、<code>**</code> 截断、<code>休息</code>×65 的重复环，在"短"这个维度上全部通过。任何以长度/行数为判据的实验，必须并列三条：非空、有终止、无 n-gram 环。</li><li><strong>剂量是第一个要控制的变量，不是容量。</strong> 同配方正常臂 <code>‖W‖_F</code> 11.1–11.8，崩的那条 17.99；而它的训练 loss 反而更高（0.0398 vs 喵的 0.0008）——<strong>loss 不能当"练了多少"的读数</strong>。</li></ol>
+<h2>附：待办</h2>
+<ul><li>[ ] A 类打分脚本（含长度匹配重采样、配对 bootstrap CI、TOST、锚点自检）</li><li>[ ] 风格位 KL 分解，接入现有 mask 事件管线</li><li>[ ] 2×2 实验的 prompt/生成批次设计</li><li>[ ] null 低秩对照矩阵的范数匹配方案</li></ul></section>
+<section id="doc6"><h2 class="doc">选题：how LLM dreams —— 压缩边界上的巩固程序 v1</h2><p class="note">四个槽、一个可执行程序、最小可发表集　·　来源 <code>TOPIC-HOW-LLM-DREAMS-v1.md</code></p><p>日期 2026-10-28。<strong>短选题文档，不是论文文本。</strong></p>
+<p>承接：前一篇 essay 已经说明<strong>为什么要选这个位置</strong>（compact 边界），以及<strong>这个位置对压缩算法提出了什么条件</strong>。本文档只回答一个问题：<strong>接下来做什么</strong>。</p>
+<p>核心目标一句话：</p>
+<blockquote><strong>不是"梦像不像重放"，而是"在上下文边界上，一个被迫有损的状态跃迁该怎么做"——而那个做法在结构上就是一次睡眠。</strong></blockquote>
+<hr>
+<h2>1. 四个槽：为什么它们不是问题</h2>
+<p>我一开始想把生命周期摊成五个槽，其中四个"没人问过"。<strong>逐个查过之后，四个都不是问题</strong>，理由都在生物那边现成：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>槽</th>
+<th>我原先的问法</th>
+<th>为什么不是问题</th>
+</tr></thead><tbody>
+<tr><td><code>R</code> 的长度</td><td>"该多长"</td><td><strong>海马体本来就只记近的</strong>。近期缓冲是自然结构，不是待优化的旋钮。</td></tr>
+<tr><td><code>S</code> 的作者</td><td>"谁写摘要"</td><td><strong>人也写笔记，笔记也在上下文里，台账也是有的</strong>。"自己给自己写"不是缺陷。</td></tr>
+<tr><td>边界时机</td><td>"该周期触发"</td><td><strong>人也不是周期触发——困了就睡。</strong> 睡眠是稳态压力驱动（腺苷累积）+ 昼夜门控，<strong>压力触发本来就是对的类比</strong>。我上一版说"梦预设周期"，错了。</td></tr>
+<tr><td>死后继承</td><td>"什么该被留下"</td><td><strong>个体可复制、可保存</strong>。清零是逐位精确的，是相对生物的优势，不是待解决的问题。</td></tr>
+</tbody></table></div>
+<p><strong>唯一还开着的不是这四个，是载体本身</strong>：<code>Δ</code> 是一个固定矩阵，它没有"按相似度切换"的结构（见 §3 关于碎片化的更正）。这才是真问题。</p>
+<p><strong>顺带一个好处</strong>：既然睡眠是压力驱动，那么<strong>现在的 compact 触发方式是对的，不需要改</strong>。最小可发表集因此少掉一项。</p>
+<hr>
+<h2>2. 「how」= 一个可以在边界上执行的程序</h2>
+<p>六步，每步标状态。这是论文的骨架。</p>
+<div class="tw"><table>
+<thead><tr>
+<th>#</th>
+<th>步骤</th>
+<th>机制</th>
+<th>状态</th>
+</tr></thead><tbody>
+<tr><td>1</td><td><strong>采集</strong>：在 episode 内记录 <code>(x, 教师分布)</code> 对，位置按"教师因 H 而变化"筛</td><td>信息加权</td><td>【已否伪影论，待测】<strong>E10</strong>：损伤跟内容走，不跟位移走 ⇒ 该采的是<strong>内容差</strong>的位置，不是"有上下文"的位置</td></tr>
+<tr><td>2</td><td><strong>选材</strong>：预算 B 次访问，选<strong>覆盖最差</strong>的 <code>x</code>，不选"最重要"的</td><td>覆盖驱动</td><td>【假设】<strong>待 E11</strong>：覆盖有没有代价</td></tr>
+<tr><td>3</td><td><strong>扰动重放</strong>：在<strong>扰动过的前缀</strong>下重放</td><td>状态鲁棒化</td><td>【已测】<strong>m55</strong>：中性 1024 从 0.696 → <strong>0.991</strong>，且外推到训练没见过的长度</td></tr>
+<tr><td>4</td><td><strong>有界写入</strong>：低秩 + <strong>范数上限</strong></td><td>剂量控制</td><td>【半测】norm 21% → 全局 KL 0.063；81% → 2.07。<strong>上限该定在哪没定</strong></td></tr>
+<tr><td>5</td><td><strong>验收门</strong>：醒来前测三点——家状态、远状态、全局损伤；不过就缩或丢</td><td>质控</td><td>【仪器已建，未进流程】E9 的 <code>KL_home</code> / <code>KL_far</code> + E6 的全局 KL</td></tr>
+<tr><td>6</td><td><strong>死亡</strong>：session 结束时的继承</td><td>未做</td><td>【空白】</td></tr>
+</tbody></table></div>
+<p><strong>第 3 步是全文最硬的一步</strong>：它是唯一一条"扰动重放确实带来功能收益"的实测证据，也是"梦为什么会失真"唯一有实测支持的答案——<strong>失真不是为了荒诞，是为了在多种状态下都能调出来。</strong></p>
+<hr>
+<h2>3. 为什么这个程序"结构上就是梦"</h2>
+<p>不靠类比，靠四条特征的<strong>逐条测量</strong>：</p>
+<div class="tw"><table>
+<thead><tr>
+<th>梦的特征</th>
+<th>程序里的对应</th>
+<th>现在的证据</th>
+</tr></thead><tbody>
+<tr><td><strong>离线</strong>（不在做事时发生）</td><td>边界上执行，不服务请求</td><td>✅ 设计如此，但<strong>输入还喂着</strong>（rehearsal，不是 replay）❌</td></tr>
+<tr><td><strong>选择性</strong>（不是全天重放）</td><td>预算 B &lt; 覆盖需求</td><td>✅ 由约束逼出（必须选），❌ 但"选什么"无实测</td></tr>
+<tr><td><strong>碎片化 / 跳跃</strong></td><td>IID 采样 ⇒ 重放集是碎片袋</td><td>❌ <strong>这个预测我撤回</strong>：训练集是袋子 ⇒ 更新是<strong>混合的平均</strong> ⇒ 生成应当<strong>变钝、变泛</strong>，不是变跳。见 §3.1</td></tr>
+<tr><td><strong>失真</strong>（内容不可靠）</td><td>扰动重放</td><td>✅ <strong>m55 有实测收益</strong>（唯一的）</td></tr>
+<tr><td><strong>会编造</strong></td><td>学错内容 ⇒ 比不学更差</td><td>✅ <strong>E10</strong>：1.95 vs 1.18</td></tr>
+</tbody></table></div>
+<p><strong>五条里三条有实测（选择性、失真、编造），一条彻底没有（离线/无输入），一条刚被撤回（跳跃）。</strong></p>
+<h3>3.1 更正：IID 采样不会让生成"跳"，会让它"钝"</h3>
+<p>上一版我写"碎片化只在重放集里成立，生成侧未测"。<strong>这个预测没有机制支撑，撤回。</strong></p>
+<p>机制上它是反的：Δ 是一个<strong>固定矩阵</strong>，训练集是位置的袋子 ⇒ 更新学到的是<strong>这些位置的加权平均修正</strong> ⇒ 生成应当<strong>更泛、更钝、更模板化</strong>，而不是更跳跃。</p>
+<p>所以可测的预测不是"跳"，是：</p>
+<blockquote><strong>钝化</strong>：IID 采样训练的 Δ，生成时给出正确实体/值的比例下降，而句法流畅度基本不变。</blockquote>
+<p>这条要测，而且它和"跳跃"是两个相反的预测，一测就能分开。</p>
+<h3>3.2 由"跳跃"反推出来的一条硬约束</h3>
+<p>如果梦<strong>真的</strong>是跳跃的，那么载体必须有一个 <code>Δ</code> 没有的结构：</p>
+<blockquote><strong>按内容相似度切换的离散检索</strong>（能"跳到另一段记忆"），而不是对全部样本的一次加性平均。</blockquote>
+<p><code>Δ</code> 是 rank-64 的加性修正，<strong>没有寻址、没有切换、没有多条目</strong>——所以它给不出跳跃，<strong>无论怎么训练</strong>。</p>
+<p>这条不是缺陷，是信息：<strong>"跳跃"这个现象本身就能反推载体的形状。</strong> 如果实验证明需要跳跃，那就说明要把载体换成带检索的结构（键值 / 最近邻 / 路由器），而不是把 <code>Δ</code> 调得更好。</p>
+<p><strong>这也是本方向唯一一条从现象学反推出硬件要求的结论</strong>，比"梦像重放"有用得多。</p>
+<p><strong>分界线仍然是"离线/无输入"</strong>：它一成立，<code>dream</code> 从隐喻变机制；它失败，结论是"LLM 只能临摹"，那也是一篇论文。</p>
+<hr>
+<h2>4. 缺的三件事，以及补法</h2>
+<div class="tw"><table>
+<thead><tr>
+<th>缺</th>
+<th>补法</th>
+<th>成本</th>
+</tr></thead><tbody>
+<tr><td><strong>无输入的重放</strong></td><td>让模型<strong>从 Δ 自己生成</strong>片段，再用教师在那片段上给分布（自生成 target），与"喂 H"对比</td><td>中（要生成 + 再训）</td></tr>
+<tr><td><strong>选材准则</strong></td><td>E11 给"覆盖 vs 锐度"的交换比；若覆盖免费，选材就只剩"按信息量"</td><td>低（E11 已写）</td></tr>
+<tr><td><strong>钝化 vs 跳跃</strong></td><td>见 §3.1：IID 采样后生成应当<strong>更泛更钝</strong>。测"正确实体率"与"句法流畅度"是否分离</td><td>低（只需推理）</td></tr>
+</tbody></table></div>
+<p><strong>"无输入重放"是关键</strong>：它一旦成立，<code>dream</code> 这个词就从隐喻变成机制；它若失败（自生成 target 必然 collapse），那么结论反而是<strong>"LLM 不能做梦，只能临摹"</strong>——这同样是一篇论文，而且更锋利。</p>
+<hr>
+<h2>5. 标题</h2>
+<blockquote><strong>Androids do <em>dream</em> of electric sheep: \&lt;subtitle\&gt;</strong></blockquote>
+<p>把 Dick 的问句改成断言。副标题的判据只有一条：<strong>必须命名一个交付物，不能命名一个现象</strong>——因为 claim 是"how"，how 就得交出一个程序。</p>
+<p>候选：</p>
+<div class="tw"><table>
+<thead><tr>
+<th></th>
+<th>副标题</th>
+<th>强弱</th>
+</tr></thead><tbody>
+<tr><td><strong>A</strong></td><td><code>selective, perturbed replay at the compaction boundary</code></td><td><strong>最稳</strong>：三个词全是实测过的结构特征，不依赖现象学成立</td></tr>
+<tr><td>B</td><td><code>a derived consolidation procedure for context compaction</code></td><td>稳，但"procedure"读起来像系统论文</td></tr>
+<tr><td>C</td><td><code>how a language model should sleep</code></td><td>最吸引人，风险是审稿人问"梦在哪"</td></tr>
+<tr><td>D</td><td><code>what must be replayed, and what must be forgotten</code></td><td>最像论文，但预测性弱</td></tr>
+</tbody></table></div>
+<p><strong>推荐 A</strong>，B 作退路。C 留到"无输入重放"跑通之后再换。</p>
+<hr>
+<h2>6. 最小可发表集</h2>
+<p>做完以下三件，A 版标题就成立（<strong>原来是四件，砍掉了"周期化"</strong>——睡眠本来就是压力驱动，现在的 compact 触发方式是对的）：</p>
+<ol><li><strong>E11</strong>（覆盖 vs 锐度）—— 选材准则的第一块砖。【已写规格】</li><li><strong>验收门进流程</strong> —— 三点质控（家/远/全局），证明"醒来前会检查自己有没有变坏"。</li><li><strong>一条端到端</strong>：一个多 episode 的 session，按 §2 的程序跑完，对比现状（只写 Δ、不扰动、不门控）。</li></ol>
+<p><strong>第 3 条是论文的主体。</strong> 前两条是它的零件。</p>
+<p><strong>"无输入重放"不必进最小集</strong>——它可以作为 discussion 的一节，或者下一篇。但<strong>必须在 limitations 里明写：本程序是无输入的临摹，不是重放。</strong> 否则标题就是超卖。</p>
+<hr>
+<h2>附：一句话</h2>
+<blockquote><strong>约束逼出了"重放"（覆盖 x），也没逼出"做梦"（无输入）。这篇论文交的是前者，标题借的是后者——所以限制段必须自己说出来。</strong></blockquote></section>
+<hr>
+<h2 id="sources">来源与完整性</h2>
+<div class="tw"><table>
+<thead><tr><th>文件</th><th>层</th><th>字符</th><th>sha256(前16)</th><th>改于</th></tr></thead>
+<tbody><tr><td><code>SLEEP-REPLAY-v1.md</code></td><td>母文档 · 方向记要</td><td>12057</td><td><code>cfbad8d8007d4e98</code></td><td>10-27 23:22</td></tr><tr><td><code>EXPERIMENTS-SLEEP-REPLAY-v1.md</code></td><td>协议 · 实验 v1</td><td>11144</td><td><code>2a9c65a230130adf</code></td><td>10-27 23:22</td></tr><tr><td><code>BIOMIMETIC-REGISTER-v1.md</code></td><td>活表 · 仿生对照</td><td>4664</td><td><code>fd85607295195249</code></td><td>10-27 23:15</td></tr><tr><td><code>CLAIMS-OFFENSIVE-v1.md</code></td><td>主张 · A/B/C/D</td><td>4025</td><td><code>3ca4435adfe82009</code></td><td>10-26 23:16</td></tr><tr><td><code>STYLE-METRICS-v1.md</code></td><td>尺子 · 文风量化</td><td>3469</td><td><code>1c35a09496370376</code></td><td>10-27 23:22</td></tr><tr><td><code>TOPIC-HOW-LLM-DREAMS-v1.md</code></td><td>选题 · 为什么是这个题</td><td>3998</td><td><code>6502a3d2a4f7a76b</code></td><td>10-27 20:35</td></tr></tbody></table></div>
+<p class="meta">sha256 取原文前 16 位，用于确认合订本与源文件一致。重新生成：改脚本里的 DOCS 列表后重跑。</p>
+</body></html>

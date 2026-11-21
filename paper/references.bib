@@ -1,0 +1,567 @@
+% =====================================================================
+%  references.bib  --  the single canonical bibliography for
+%  paper-fse-v1.tex (acmart / sigconf, compiled with BibTeX through
+%  \bibliographystyle{ACM-Reference-Format}).
+%
+%  46 entries: the 44 keys \cite'd by the paper, plus two entries held for
+%  table rows that are not back in the paper yet (ccm, perfact).  BibTeX
+%  prints only cited entries, so the two uncited ones are inert.
+%
+%  House rules (applied to every entry):
+%    * author = {Surname, I. I.} lists, surname first, given names as
+%      initials; "and others" when the record lists a large team;
+%    * no field is invented.  Every title, author list, year, venue and
+%      page range below was read from a machine-readable record on
+%      2026-10-26: arXiv Atom API (export.arxiv.org), Crossref REST API,
+%      Europe PMC, the CVF open-access page, or the publisher /
+%      programme page itself.  See references-verification.md for the
+%      per-key audit trail and for the discrepancies between this file
+%      and the hand-written list it replaces;
+%    * arXiv items carry eprint + archivePrefix = {arXiv} + primaryClass;
+%      the ACM style prints them as "arXiv:XXXX.XXXXX [class]", so the
+%      id is never repeated in `note`;
+%    * `note` is used only where a printed record and the paper's own
+%      short name disagree (flagged inline, below);
+%    * entries are grouped: journals, proceedings, arXiv preprints, web
+%      resources.  BibTeX decides the printed order, not this file.
+% =====================================================================
+
+
+% ------------------------------------------------------------ journals
+
+@article{landauer1986,
+  author       = {Landauer, T. K.},
+  title        = {How Much Do People Remember? {Some} Estimates of the
+                  Quantity of Learned Information in Long-term Memory},
+  journal      = {Cognitive Science},
+  volume       = {10},
+  number       = {4},
+  pages        = {477--493},
+  year         = {1986},
+  doi          = {10.1207/s15516709cog1004_4}
+}
+
+@article{shannon1951,
+  author       = {Shannon, C. E.},
+  title        = {Prediction and Entropy of Printed {English}},
+  journal      = {Bell System Technical Journal},
+  volume       = {30},
+  number       = {1},
+  pages        = {50--64},
+  year         = {1951},
+  doi          = {10.1002/j.1538-7305.1951.tb01366.x}
+}
+
+@article{shumailov2024,
+  author       = {Shumailov, I. and Shumaylov, Z. and Zhao, Y. and
+                  Papernot, N. and Anderson, R. and Gal, Y.},
+  title        = {{AI} Models Collapse when Trained on Recursively
+                  Generated Data},
+  journal      = {Nature},
+  volume       = {631},
+  number       = {8022},
+  pages        = {755--759},
+  year         = {2024},
+  doi          = {10.1038/s41586-024-07566-y}
+}
+
+% Neuron count cited in the paper (8.6e11).
+@article{azevedo2009,
+  author       = {Azevedo, F. A. C. and Carvalho, L. R. B. and
+                  Grinberg, L. T. and Farfel, J. M. and
+                  Ferretti, R. E. L. and Leite, R. E. P. and
+                  Filho, W. J. and Lent, R. and Herculano-Houzel, S.},
+  title        = {Equal Numbers of Neuronal and Nonneuronal Cells Make the
+                  Human Brain an Isometrically Scaled-up Primate Brain},
+  journal      = {Journal of Comparative Neurology},
+  volume       = {513},
+  number       = {5},
+  pages        = {532--541},
+  year         = {2009},
+  doi          = {10.1002/cne.21974}
+}
+
+% Synapse count cited in the paper (1e14); primary source behind
+% BioNumbers BNID 112056.  Author list from Europe PMC.
+@article{brain,
+  author       = {Pakkenberg, B. and Pelvig, D. and Marner, L. and
+                  Bundgaard, M. J. and Gundersen, H. J. and
+                  Nyengaard, J. R. and Regeur, L.},
+  title        = {Aging and the Human Neocortex},
+  journal      = {Experimental Gerontology},
+  volume       = {38},
+  number       = {1--2},
+  pages        = {95--99},
+  year         = {2003},
+  doi          = {10.1016/S0531-5565(02)00151-1}
+}
+
+
+% --------------------------------------------------------- proceedings
+
+@inproceedings{deletang2024,
+  author       = {Del{\'e}tang, G. and Ruoss, A. and Duquenne, P.-A. and
+                  Catt, E. and Genewein, T. and Mattern, C. and
+                  Grau-Moya, J. and Wenliang, L. K. and Aitchison, M. and
+                  Orseau, L. and Hutter, M. and Veness, J.},
+  title        = {Language Modeling Is Compression},
+  booktitle    = {International Conference on Learning Representations
+                  (ICLR)},
+  year         = {2024},
+  eprint       = {2309.10668},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG}
+}
+
+@inproceedings{selectkd2026,
+  author       = {Huang, H. and Song, J. and Zhang, Y. and Ren, P.},
+  title        = {{SelecTKD}: Selective Token-Weighted Knowledge
+                  Distillation for {LLMs}},
+  booktitle    = {Proceedings of the IEEE/CVF Conference on Computer Vision
+                  and Pattern Recognition (CVPR)},
+  pages        = {19287--19297},
+  year         = {2026},
+  eprint       = {2510.24021},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@inproceedings{maxdiv2026,
+  author       = {Jafari, A. and Ashrafi Fashi, P. and
+                  Rezagholizadeh, M. and Asadi Golmankhaneh, H. and
+                  Salehi, S. and Appia, V. and Barsoum, E. and Ghodsi, A.},
+  title        = {Learning from Disagreement: Maximum Divergence Knowledge
+                  Distillation},
+  booktitle    = {Advances in Neural Information Processing Systems
+                  (NeurIPS)},
+  year         = {2026},
+  url          = {https://neurips.cc/virtual/2026/loc/sydney/poster/155838}
+}
+
+@inproceedings{adaptivekd2025,
+  author       = {Peng, B. and Zhang, Z. and Qi, Y. and Qiao, L.},
+  title        = {Adaptive Selective Knowledge Distillation: Not Blindly
+                  Accepting Teachers as Oracles},
+  booktitle    = {Pattern Recognition and Computer Vision (PRCV)},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {200--214},
+  year         = {2024},
+  doi          = {10.1007/978-981-97-8502-5_15}
+}
+
+@inproceedings{mita2026,
+  author       = {Wen, Q. and Huang, Z. and Meng, X. and He, W. and
+                  Li, C.-G.},
+  title        = {Mixture-of-Top-$k$ Attention: Efficient Attention via
+                  Scalable Fast Weights},
+  booktitle    = {Advances in Neural Information Processing Systems
+                  (NeurIPS)},
+  year         = {2026},
+  eprint       = {2602.01219},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG}
+}
+
+
+% ---------------------------------------------------- arXiv preprints
+
+@misc{schlag2021,
+  author       = {Schlag, I. and Irie, K. and Schmidhuber, J.},
+  title        = {Linear Transformers Are Secretly Fast Weight Programmers},
+  year         = {2021},
+  eprint       = {2102.11174},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG}
+}
+
+@misc{snell2022,
+  author       = {Snell, C. and Klein, D. and Zhong, R.},
+  title        = {Learning by Distilling Context},
+  year         = {2022},
+  eprint       = {2209.15189},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{cartridges2025,
+  author       = {Eyuboglu, S. and Ehrlich, R. and Arora, S. and Guha, N. and
+                  Zinsley, D. and Liu, E. and Tennien, W. and Rudra, A. and
+                  Zou, J. and Mirhoseini, A. and R{\'e}, C.},
+  title        = {Cartridges: Lightweight and General-Purpose Long Context
+                  Representations via Self-Study},
+  year         = {2025},
+  eprint       = {2506.06266},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{qwen3report2025,
+  author       = {Yang, A. and Li, A. and Yang, B. and Zhang, B. and
+                  Hui, B. and Zheng, B. and others},
+  title        = {{Qwen3} Technical Report},
+  year         = {2025},
+  eprint       = {2505.09388},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{doctolora2026,
+  author       = {Charakorn, R. and Cetin, E. and Uesaka, S. and
+                  Lange, R. T.},
+  title        = {Doc-to-{LoRA}: Learning to Instantly Internalize
+                  Contexts},
+  year         = {2026},
+  eprint       = {2602.15902},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{tavor2026,
+  author       = {Tavor, A. and Ebenspanger, I. and Cnaan, N. and
+                  Geva, M.},
+  title        = {Rethinking Selective Knowledge Distillation},
+  year         = {2026},
+  eprint       = {2602.01395},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{cartridges_scale2026,
+  author       = {Hardalov, M. and Iglesias, G. and de Gispert, A.},
+  title        = {Cartridges at Scale: Training Modular {KV} Caches over
+                  Large Document Collections},
+  year         = {2026},
+  eprint       = {2606.04557},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+% The draft's short name "TMEM" does not occur in the record; the arXiv
+% id is the one the paper means, and the printed title is the record's.
+@misc{tmem2026,
+  author       = {Ren, T. and Luo, W. and Yang, H. and Zhu, R. and
+                  Huang, X. and Wu, Y. and Chou, B. and Ye, J. and
+                  Liang, J. and Li, Y. and Peng, Y.},
+  title        = {Scaling Self-Evolving Agents via Parametric Memory},
+  year         = {2026},
+  eprint       = {2606.04536},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI}
+}
+
+@misc{collapse2026,
+  author       = {Chen, J. and Yang, W. and Fan, S. and Nie, W. and
+                  Sun, C. and Zheng, S. and Hu, Y. and Pan, L. and
+                  Zeng, K. and Lin, Y.},
+  title        = {Rethinking Continual Experience Internalization for
+                  Self-Evolving {LLM} Agents},
+  year         = {2026},
+  eprint       = {2606.04703},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{still2026,
+  author       = {O'Neill, C. and Sandomirsky, A. and Partridge, H. and
+                  Jayasekara, M. and Kirkby, M.},
+  title        = {Still: Amortized {KV} Cache Compaction in a Single
+                  Forward Pass},
+  year         = {2026},
+  eprint       = {2606.07878},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG}
+}
+
+@misc{doctoatom2026,
+  author       = {Diao, X. and Li, W. and Saidutta, Y. M. and
+                  Amballa, A. and Valkov, L. and Chappidi, S.},
+  title        = {Doc-to-Atom: Learning to Compile and Compose Memory
+                  Atoms},
+  year         = {2026},
+  eprint       = {2606.12400},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{memdepth2026,
+  author       = {Han, H.},
+  title        = {Memory Depth, Not Memory Access: Selective Parametric
+                  Consolidation for Long-Running Language Agents},
+  year         = {2026},
+  eprint       = {2606.26806},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI}
+}
+
+@misc{evaf2026,
+  author       = {Han, H.},
+  title        = {{EVAF}: A Test-Retest Protocol for Selective Parametric
+                  Consolidation},
+  year         = {2026},
+  eprint       = {2606.29916},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG}
+}
+
+@misc{restorekv2026,
+  author       = {Baek, C. and Shin, S. and Kong, K.},
+  title        = {{RestoreKV}: Recovering Full-Cache Behavior Under
+                  Aggressive Query-Agnostic {KV} Cache Eviction},
+  year         = {2026},
+  eprint       = {2608.01247},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{compacttheory2026,
+  author       = {Tirmazi, H. and Markelon, S. and Bishop, A. and
+                  Mitzenmacher, M.},
+  title        = {Context Compaction Theory},
+  year         = {2026},
+  eprint       = {2608.01326},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.DS}
+}
+
+@misc{lostincompact2026,
+  author       = {Wang, Z. and Zhang, Y. and Lee, D. and Baracaldo, N. and
+                  Yang, Y.},
+  title        = {Lost in Context Compaction: When {LLM} Systems Drop
+                  Side Constraints},
+  year         = {2026},
+  eprint       = {2608.11242},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{doclive2026,
+  author       = {Carraz Rakotonirina, N. and Hardalov, M. and
+                  Iglesias, G. and de Gispert, A.},
+  title        = {Where Should a Document Live: Context, Representations,
+                  or Parameters?},
+  year         = {2026},
+  eprint       = {2609.17346},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{deepseekv41flash2026,
+  author       = {{DeepSeek-AI} and others},
+  title        = {{DeepSeek-V4.1-Flash}: Pushing the Limits of {KV} Cache
+                  Compression},
+  year         = {2026},
+  eprint       = {2609.19969},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{rpmem2026,
+  author       = {Zhao, F. and Cao, R. and Dong, L. and Yao, F. and
+                  Xu, J. and Jiang, G. and Zhang, H. and Zhao, Y. and
+                  Li, Y.},
+  title        = {{RPMem}: Learning Long-Term Recurrent Parametric Memory
+                  across Sessions for {LLM} Agents},
+  year         = {2026},
+  eprint       = {2609.23466},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+% The draft's short name "LOHA" does not occur in the record; only "ACD"
+% (Anchored Context Distillation) does.
+@misc{loha2026,
+  author       = {Zou, Z. and Wang, G. and Hao, D.},
+  title        = {Compress What You See, Not What You Say: Anchored Context
+                  Distillation for Latent-Observation Software Engineering
+                  Agents},
+  year         = {2026},
+  eprint       = {2609.31430},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI}
+}
+
+@misc{overridegap2026,
+  author       = {Cheng, S. and Shi, X. and Zhang, Z. and Li, M.},
+  title        = {The Override Gap: A Magnitude Account of Knowledge
+                  Conflict Failure in Hypernetwork-Based Instant {LLM}
+                  Adaptation},
+  year         = {2026},
+  eprint       = {2604.23750},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG}
+}
+
+@misc{dppm2026,
+  author       = {Chen, Y. and Liu, S. and Shi, J. and Hong, J. and
+                  Cheng, C. and Ding, X. and Wang, T. and Li, Y. and
+                  Liu, Q. and Xu, T.},
+  title        = {{DPPM}: Dual-Path Parametric Memory for Personalized
+                  Language Models},
+  year         = {2026},
+  eprint       = {2610.11776},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{remory2026,
+  author       = {Xia, H. and Chen, B. and Ge, Y. and Deng, N. and
+                  Yang, S. and Dong, Z. and Yuan, W. and Zhu, S.},
+  title        = {{REMORY}: Learning Residual Memory for Context
+                  Compaction},
+  year         = {2026},
+  eprint       = {2610.11287},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+
+% ----------------------------------------------------- web resources
+
+@misc{genome,
+  author       = {{National Human Genome Research Institute}},
+  title        = {Human Genome Project Fact Sheet},
+  howpublished = {\url{https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genome-project}},
+  year         = {2026},
+  note         = {Web resource; accessed 2026-10-26}
+}
+
+% The paper's key says "report", but no Qwen3.8-27B technical report
+% exists; what is citable for this model is its Hugging Face model card.
+@misc{qwen38report2026,
+  author       = {{Qwen}},
+  title        = {{Qwen3.8-27B}},
+  howpublished = {Hugging Face},
+  year         = {2026},
+  url          = {https://huggingface.co/Qwen/Qwen3.8-27B},
+  note         = {Model card; no technical report exists}
+}
+
+@misc{dsh,
+  author       = {{DeepSeek-AI}},
+  title        = {{DeepSeek Harness (dsh)}},
+  year         = {2026},
+  note         = {Version 0.1.7-rc.2},
+  howpublished = {\url{https://github.com/deepseek-ai/deepseek-harness}}
+}
+
+% ------------------------------------------------- arXiv refill (v1)
+%  The eight arXiv-only placeholders that stood at the end of this file
+%  (no real author field, a bare acronym for a title, and a note
+%  disclaiming the title) were replaced on 2026-10-26 by the records
+%  returned by the arXiv Atom
+%  API (export.arxiv.org/api/query?id_list=...) and the abs pages.  All
+%  eight ids resolved to the system the paper's short name means; no id
+%  was swapped and no field was invented.  Names are surname-first with
+%  initials per the house rule; records listing more than three authors
+%  keep the first three + "and others".  See REFS-FILL-v1.md for the
+%  per-key evidence (title / author / eprint quoted from the record).
+%  p.s. arXiv v1 dates are used for `year`, so xkv2025 stays 2025 even
+%  though the record's comment field announces ICML 2026.
+
+@misc{ascent2026,
+  author       = {Lu, H. and Gong, D.},
+  title        = {{ASCENT}: Online Test-Time Training of Long-Horizon Agents
+                  via Self-Distillation of Verified Experience},
+  year         = {2026},
+  eprint       = {2610.05303},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG}
+}
+
+@misc{lclm2026,
+  author       = {Li, A. and McLeish, S. and Chen, H. and others},
+  title        = {End-to-End Context Compression at Scale},
+  year         = {2026},
+  eprint       = {2606.09659},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{sleep2026,
+  author       = {Behrouz, A. and Hashemi, F. and Javanmard, A. and others},
+  title        = {Language Models Need Sleep: Learning to Self-Modify and
+                  Consolidate Memories},
+  year         = {2026},
+  eprint       = {2606.03979},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG}
+}
+
+@misc{sempic2026,
+  author       = {Xie, H. and Xiao, P. and Deng, Y. and others},
+  title        = {{SemPIC}: Learning Semantic Position-Independent {KV} Caches},
+  year         = {2026},
+  eprint       = {2607.28069},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI}
+}
+
+@misc{xkv2025,
+  author       = {Chang, C.-C. and Lin, W.-C. and Lin, C.-Y. and others},
+  title        = {{xKV}: Cross-Layer {KV}-Cache Compression via Aligned
+                  Singular Vector Extraction},
+  year         = {2025},
+  eprint       = {2503.18893},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+@misc{statelm2026,
+  author       = {Liu, X. and Liang, T. and Ma, D. and others},
+  title        = {The Pensieve Paradigm: Stateful Language Models Mastering
+                  Their Own Context},
+  year         = {2026},
+  eprint       = {2602.12108},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI}
+}
+
+@misc{rlm2025,
+  author       = {Zhang, A. L. and Kraska, T. and Khattab, O.},
+  title        = {Recursive Language Models},
+  year         = {2025},
+  eprint       = {2512.24601},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI}
+}
+
+@misc{docatlas2026,
+  author       = {Wei, H. and Wang, Y. and Liu, B. and others},
+  title        = {{DocAtlas}: Long-Document Understanding as Mutable-State
+                  Interaction},
+  year         = {2026},
+  eprint       = {2608.07527},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL}
+}
+
+% CCM = "Continuous Context Management" (arXiv 2609.35540).  NOT
+% arXiv 2312.03414, which is a different ICLR 2024 paper (Compressed
+% Context Memory, Kim et al.).  The abstract of 2609.35540 names the
+% abbreviation itself: "We study Continuous Context Management (CCM),
+% which performs compaction at every turn...".  Held for a table row,
+% so it is not yet cited by paper-fse-v1.tex and does not print.
+@misc{ccm,
+  author       = {Hoy, W. and Fan, J. and Celik, N. and Pan, X.},
+  title        = {Continuous Context Management},
+  year         = {2026},
+  eprint       = {2609.35540},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.AI}
+}
+
+% "Per-fact LoRA editing (Zenodo)" -- the DOI the draft gave is real, but
+% its title is not "Per-fact LoRA editing": the record is Baranov's
+% self-published "Sleeping LLM" preprint series, whose body describes
+% per-fact LoRA training + MEMIT.  Different work from arXiv 2606.03979
+% (Behrouz et al.), not peer reviewed.  Held for a table row.
+@misc{perfact,
+  author       = {Baranov, V.},
+  title        = {Sleeping {LLM}: Two-Phase Memory Consolidation for
+                  Lifelong Learning from {3B} to {70B} Parameters},
+  howpublished = {Zenodo preprint},
+  year         = {2026},
+  doi          = {10.5281/zenodo.18778766},
+  url          = {https://zenodo.org/records/18778766},
+  note         = {Not peer reviewed}
+}
