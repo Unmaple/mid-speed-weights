@@ -1,5 +1,7 @@
 # results/ 索引：全部读数
 
+> **仓库副本说明（整理者添加，正文未改）。** 本索引写于 2026-11-18 前后，当时列的是 40 份；仓库里这一目录现有 58 个文件，另含 11-17 → 11-21 的 E21–E24、轮次记录与 D1 交接。v10 论文只用到 2026-10-27 之前的读数，**正式结论以 [v10 PDF](../../../paper/paper-AVCP-v10.pdf) 为准**。
+
 四十份文档（含本索引与 `NEXT.md`），按"能支撑什么、不能支撑什么"排列。全部数据文件在 `.local-8b/`，脚本同名。
 
 **最新进展（11-18 晚 E23 Teacher 自主造梦闭环）**：[`e23_self_dream.md`](e23_self_dream.md)（零人工触发器、零 `SEEDS_MAIN`、零数学平衡题 `--dom-frac 0.0`：同一份 `dsh` 抽象自造梦+纯 Wiki NSP 管线在 **大肥鱼** 拿下 19 项规则 **`18/19`** 反超教师 `17/19`、E7 **`25.2 字 / 3.11 行 / 7.5 cpl`** 精准重合教师、能力 **`44/64 (0.688)`**、Wiki/OOD `0.0034 / 0.0098`；在 **927 收音机** 从旧闲聊梦 `6/14` 拉至 **`11/14`**、风格 `24.1 字 / 7.4 cpl`、招牌词 `0.923`、能力 **`42/64` (+34.4 pp vs teacher)**）、[`ROUND-2026-11-18.md`](ROUND-2026-11-18.md)（定型**「纯无标签 WikiText-2 NSP + 极简账本 + 行为增量 $\Delta$」整套通用方案**），`e22_minimal_pwsh.md`（E22 `dsh` `minimal` preset `403 tok` + 真实 9B × Windows PS 5.1 排障轨迹 `8,021 tok` 闭环及 `--dom-frac 0.0` 纯 Wiki NSP 消融：`summary_dsh` 11.1× 压缩跌至 `2/20`、`oracle_full` 仅 `8/20` (`cap 13/24`)；`dom=0.30` `ledger_delta (+259 tok)` 达 `10/20` + `cap_strict 18/24` + OOD `0.0057`；**彻底移除 Stream-2 数学/代码题的纯 Wiki NSP 版 `e22_nodom` `ledger_delta`** 更跃升至 **`16/20`** (`ps51=5/5, ledger=5/6, inject=3/3`, McNemar 显著胜 `oracle_full p=0.0386`、`summary_dsh p=0.000122` 与 `dom=0.30 p=0.03125`) 且保持 **`0/24` 工具劫持**、`cap 15/24`、Wiki/OOD `0.0016 / 0.0097`）、`e21_dsh_7k.md` & `kv_cache_reuse_opt.md`（E21 `7k` 前缀 + `summary_dsh` 与 `v3` 高剂量 `20/24` / `cap 18/24`）。
